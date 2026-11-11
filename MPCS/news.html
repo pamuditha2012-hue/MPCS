@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News, Notices & Tenders | Demo MPCS - Multi-Purpose Co-operative Society Ltd.</title>
+  <meta name="description" content="Official AGM notices, public announcements, and active procurement tenders for suppliers and contractors at Demo MPCS.">
+  <link rel="icon" type="image/png" href="logo.png">
+
+  <!-- Instant Theme Loader (Default: Light Mode) -->
+  <script>
+    (function() {
+      const theme = localStorage.getItem('mpcs_theme') || 'light';
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="top-bar-info">
+        <span class="emergency-tag">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+          <span data-i18n="topbar.hotline">Hotline / Complaints:</span> +94 31 222 3999
+        </span>
+        <div class="top-info-item top-info-phone">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          <span data-i18n="topbar.office">Head Office: +94 31 222 3456</span>
+        </div>
+      </div>
+      <div class="top-bar-actions">
+        <div class="lang-switcher">
+          <button type="button" class="lang-btn active" data-lang="en">EN</button>
+          <button type="button" class="lang-btn" data-lang="si">සිංහල</button>
+          <button type="button" class="lang-btn" data-lang="ta">தமிழ்</button>
+        </div>
+
+        <!-- Topbar Theme Toggle -->
+        <button type="button" class="theme-toggle-btn topbar-theme-btn" aria-label="Toggle Theme" title="Toggle Dark/Light Mode">
+          <span class="theme-icon sun-icon">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          </span>
+          <span class="theme-icon moon-icon">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          </span>
+          <span class="theme-btn-text">Dark</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-wrapper">
+        <img src="logo.png" alt="Demo MPCS Logo" class="brand-logo-img">
+        <div class="brand-text">
+          <span class="brand-title" data-i18n="brand.name">Demo MPCS</span>
+          <span class="brand-tag" data-i18n="brand.sub">Multi-Purpose Co-operative Society Ltd.</span>
+          <span class="brand-meta" data-i18n="brand.reg">Reg No: WP/GM/248 | Est. 1972</span>
+        </div>
+      </a>
+
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link" data-i18n="nav.home">Home</a></li>
+          <li><a href="about.html" class="nav-link" data-i18n="nav.about">About Us</a></li>
+          <li><a href="services.html" class="nav-link" data-i18n="nav.services">Services</a></li>
+          <li><a href="rates.html" class="nav-link" data-i18n="nav.rates">Rates & Calculators</a></li>
+          <li><a href="welfare.html" class="nav-link" data-i18n="nav.welfare">Member Welfare</a></li>
+          <li><a href="branches.html" class="nav-link" data-i18n="nav.branches">Branches</a></li>
+          <li><a href="news.html" class="nav-link active" data-i18n="nav.news">News & Tenders</a></li>
+          <li><a href="contact.html" class="nav-link" data-i18n="nav.contact">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Desktop Header Theme Toggle -->
+        <button type="button" class="theme-toggle-btn header-theme-btn" aria-label="Toggle Theme" title="Toggle Dark/Light Mode">
+          <span class="theme-icon sun-icon">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          </span>
+          <span class="theme-icon moon-icon">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          </span>
+          <span class="theme-mode-text">Theme</span>
+        </button>
+
+        <a href="#memberModal" class="btn btn-primary" data-modal-target="memberModal">
+          <span data-i18n="nav.become_member">Join as Member</span>
+        </a>
+      </div>
+
+      <!-- Mobile Controls (Theme Toggle + Burger Toggle) -->
+      <div class="mobile-nav-actions">
+        <button type="button" class="theme-toggle-btn mobile-theme-btn" aria-label="Toggle Theme" title="Toggle Dark/Light Mode">
+          <span class="theme-icon sun-icon">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          </span>
+          <span class="theme-icon moon-icon">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          </span>
+        </button>
+        <button type="button" class="mobile-toggle" aria-label="Open Navigation Menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer-backdrop"></div>
+  <aside class="mobile-drawer">
+    <div class="drawer-header">
+      <div class="brand-wrapper">
+        <img src="logo.png" alt="Demo MPCS Logo" style="width: 38px; height: 38px; background: #fff; border-radius: 6px; padding: 2px;">
+        <span class="brand-title" style="font-size: 1.1rem;" data-i18n="brand.name">Demo MPCS</span>
+      </div>
+      <button type="button" class="drawer-close" aria-label="Close Menu">&times;</button>
+    </div>
+
+    <!-- Mobile Theme Switcher -->
+    <div class="drawer-theme-box">
+      <span class="drawer-section-title">THEME MODE</span>
+      <div class="theme-switch-pill">
+        <button type="button" class="theme-pill-opt" data-theme-val="dark">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          Dark
+        </button>
+        <button type="button" class="theme-pill-opt active" data-theme-val="light">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line></svg>
+          Light
+        </button>
+      </div>
+    </div>
+
+    <div style="margin: 14px 0 18px 0;">
+      <span class="drawer-section-title">SELECT LANGUAGE</span>
+      <div class="lang-switcher" style="width: 100%; justify-content: space-around;">
+        <button type="button" class="lang-btn active" data-lang="en">English</button>
+        <button type="button" class="lang-btn" data-lang="si">සිංහල</button>
+        <button type="button" class="lang-btn" data-lang="ta">தமிழ்</button>
+      </div>
+    </div>
+
+    <nav class="drawer-nav">
+      <a href="index.html" data-i18n="nav.home">Home</a>
+      <a href="about.html" data-i18n="nav.about">About Us</a>
+      <a href="services.html" data-i18n="nav.services">Services</a>
+      <a href="rates.html" data-i18n="nav.rates">Rates & Calculators</a>
+      <a href="welfare.html" data-i18n="nav.welfare">Member Welfare</a>
+      <a href="branches.html" data-i18n="nav.branches">Branches</a>
+      <a href="news.html" class="active" data-i18n="nav.news">News & Tenders</a>
+      <a href="contact.html" data-i18n="nav.contact">Contact Us</a>
+    </nav>
+  </aside>
+
+  <!-- Page Banner (Shaded Photo & Themed Floating Card) -->
+  <div class="page-banner banner-news">
+    <div class="container page-banner-grid">
+      <div class="page-banner-content">
+        <span class="page-banner-badge">Accountability & Open Notices</span>
+        <h1 class="page-banner-title" data-i18n="news.hero_title">Official News, Notices & Tenders</h1>
+        <p class="page-banner-subtitle" data-i18n="news.hero_subtitle">Official procurement opportunities, annual general meetings, and community service updates.</p>
+        <div class="breadcrumb-nav">
+          <a href="index.html" data-i18n="nav.home">Home</a>
+          <span>/</span>
+          <span data-i18n="nav.news">News & Tenders</span>
+        </div>
+      </div>
+      <div class="page-banner-visual">
+        <div class="banner-photo-card">
+          <img src="assets/images/headquarters.jpg" alt="Official Announcements" class="banner-photo-img">
+          <div class="banner-photo-overlay">
+            <span class="banner-photo-tag">Public Notices</span>
+            <span class="banner-photo-caption">Tenders, Board Reports & AGM Updates</span>
+          </div>
+          <span class="banner-diamond-pill">Verified Directives</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Active Tenders Section -->
+  <section class="section-padding" id="tenders">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" style="background:#fee2e2; color:#b91c1c;">Procurement Notices</span>
+        <h2 class="section-title" data-i18n="news.tenders_title">Active Tender Notices</h2>
+        <p class="section-subtitle" data-i18n="news.tenders_subtitle">Open tenders for registered contractors, suppliers, and service providers.</p>
+      </div>
+
+      <!-- News & Transparency Banner -->
+      <div style="margin-bottom: 36px; border-radius: var(--radius-xl); overflow: hidden; height: 200px; position: relative; box-shadow: var(--shadow-sm);">
+        <img src="assets/images/headquarters.jpg" style="width: 100%; height: 100%; object-fit: cover;" alt="Transparent Governance">
+        <div style="position: absolute; inset: 0; background: linear-gradient(to right, rgba(30, 58, 138, 0.92) 0%, rgba(30, 58, 138, 0.45) 60%, transparent 100%); display: flex; align-items: center; padding: 0 36px; color: #fff;">
+          <div>
+            <span style="background: rgba(255,255,255,0.2); padding: 3px 10px; border-radius: var(--radius-full); font-size: 0.75rem; font-weight: 700; text-transform: uppercase;">Public Accountability</span>
+            <h3 style="font-size: 1.6rem; font-weight: 800; margin: 6px 0 4px 0;">Official Procurement, Tenders & AGM Notices</h3>
+            <p style="max-width: 540px; font-size: 0.95rem; color: rgba(255,255,255,0.9);">Democratic governance and open bidding opportunities for verified suppliers across Sri Lanka.</p>
+          </div>
+        </div>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 32px; margin-bottom: 50px;">
+        
+        <!-- Tender 1 -->
+        <div class="news-card">
+          <div class="tender-banner">
+            <span style="display:flex; align-items:center; gap:6px;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              TENDER OPEN
+            </span>
+            <span class="tender-deadline-chip" data-i18n="news.t1_deadline">Bid Closing: Nov 30, 2026 at 2:00 PM</span>
+          </div>
+          <div class="news-body">
+            <span class="news-date" data-i18n="news.t1_no">Tender No: MPCS/NEG/2026/T-08</span>
+            <h4 data-i18n="news.t1_title">Supply of Nadu, Samba & Kekulu Rice for Co-op City Network (Year 2027)</h4>
+            <p data-i18n="news.t1_desc">
+              Sealed bids are invited from registered rice millers and wholesale suppliers for the bulk supply of certified rice varieties for retail distribution.
+            </p>
+            
+            <div style="background: var(--gray-50); border: 1px solid var(--border-color); padding: 14px; border-radius: var(--radius-md); font-size: 0.85rem; margin-bottom: 20px;">
+              <div><strong>Non-refundable Tender Fee:</strong> LKR 2,500/-</div>
+              <div><strong>Bid Security (Guarantee):</strong> LKR 100,000/-</div>
+              <div><strong>Delivery Location:</strong> Main Wholesale Stores, Negombo</div>
+            </div>
+
+            <div style="margin-top: auto; display: flex; gap: 12px;">
+              <button type="button" class="btn btn-primary btn-sm" onclick="alert('Downloading sample tender document MPCS-T08-2026.pdf...');">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                Download Bidding Doc
+              </button>
+              <a href="contact.html?subject=Tender-T08" class="btn btn-secondary btn-sm">Inquire</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tender 2 -->
+        <div class="news-card">
+          <div class="tender-banner">
+            <span style="display:flex; align-items:center; gap:6px;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              TENDER OPEN
+            </span>
+            <span class="tender-deadline-chip" data-i18n="news.t2_deadline">Bid Closing: Dec 15, 2026 at 3:00 PM</span>
+          </div>
+          <div class="news-body">
+            <span class="news-date" data-i18n="news.t2_no">Tender No: MPCS/NEG/2026/T-09</span>
+            <h4 data-i18n="news.t2_title">Procurement & Installation of IP CCTV Surveillance for Main Warehouse & HQ</h4>
+            <p data-i18n="news.t2_desc">
+              Proposals invited from certified security and electronics vendors for a complete high-definition IP camera surveillance system with off-site monitoring.
+            </p>
+            
+            <div style="background: var(--gray-50); border: 1px solid var(--border-color); padding: 14px; border-radius: var(--radius-md); font-size: 0.85rem; margin-bottom: 20px;">
+              <div><strong>Non-refundable Tender Fee:</strong> LKR 3,500/-</div>
+              <div><strong>Bid Security (Guarantee):</strong> LKR 150,000/-</div>
+              <div><strong>Scope:</strong> 48 Channels NVR, Night-Vision IP Cameras, Cloud Backup</div>
+            </div>
+
+            <div style="margin-top: auto; display: flex; gap: 12px;">
+              <button type="button" class="btn btn-primary btn-sm" onclick="alert('Downloading sample tender document MPCS-T09-2026.pdf...');">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                Download Bidding Doc
+              </button>
+              <a href="contact.html?subject=Tender-T09" class="btn btn-secondary btn-sm">Inquire</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- How to Submit Tenders Info -->
+      <div style="background: var(--primary-50); border: 1px solid var(--primary-200); border-radius: var(--radius-lg); padding: 28px;">
+        <h4 style="font-size: 1.15rem; font-weight: 700; color: var(--text-heading); margin-bottom: 8px;">General Tender Instructions</h4>
+        <p style="font-size: 0.9rem; color: var(--text-body); line-height: 1.6;">
+          Completed bids marked with the tender reference number on the top left corner of the envelope should be deposited in the Tender Box situated at the General Manager's Office, Demo MPCS Head Office, No. 120, Colombo Road, Negombo, on or before the specified deadline. Late bids will be rejected unopened.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- News & Community Updates -->
+  <section class="section-padding" style="background: var(--gray-100);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Announcements</span>
+        <h2 class="section-title">Society Updates & Press Releases</h2>
+        <p class="section-subtitle">Important milestones and events shaping the future of our co-operative community.</p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 32px;">
+        <!-- Announcement 1 -->
+        <div style="background: var(--bg-card); border-radius: var(--radius-xl); padding: 32px; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm);">
+          <div style="font-size: 0.8rem; font-weight: 700; color: var(--accent-amber); margin-bottom: 8px;" data-i18n="news.agm_date">
+            Date: December 18, 2026 at 9:30 AM | Main Co-op Reception Hall
+          </div>
+          <h3 style="font-size: 1.3rem; font-weight: 800; color: var(--text-heading); margin-bottom: 12px;" data-i18n="news.agm_title">
+            Notice of 52nd Annual General Meeting (AGM)
+          </h3>
+          <p style="font-size: 0.925rem; color: var(--text-body); line-height: 1.7; margin-bottom: 16px;" data-i18n="news.agm_desc">
+            All active shareholding members are cordially invited to attend the 52nd AGM. Distribution of annual dividend vouchers and election of committee delegates will take place.
+          </p>
+          <div style="font-size: 0.85rem; color: var(--text-muted);">
+            <strong>Agenda:</strong> Confirmation of minutes of 51st AGM, presentation of Audited Annual Accounts 2025/2026, allotment of dividend reserves, and proposed constitutional amendments.
+          </div>
+        </div>
+
+        <!-- Announcement 2 -->
+        <div style="background: var(--bg-card); border-radius: var(--radius-xl); padding: 32px; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm);">
+          <div style="font-size: 0.8rem; font-weight: 700; color: var(--primary-700); margin-bottom: 8px;">
+            Branch Modernization Milestone
+          </div>
+          <h3 style="font-size: 1.3rem; font-weight: 800; color: var(--text-heading); margin-bottom: 12px;">
+            Renovated Kochchikade Co-op City Outlet Re-opened
+          </h3>
+          <p style="font-size: 0.925rem; color: var(--text-body); line-height: 1.7; margin-bottom: 16px;">
+            Upgraded with modern chillers, expanded aisle space, automated POS billing, and enhanced produce sections to provide an exceptional shopping experience at fair co-op prices.
+          </p>
+          <div style="font-size: 0.85rem; color: var(--text-muted);">
+            Featuring special inaugural discounts on dry rations, organic village vegetables, and daily baked bakery items.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Careers Notice Section -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="careers-cta-banner">
+        <div>
+          <span class="careers-tag">Join Our Team</span>
+          <h3 class="careers-title">Career Opportunities at Demo MPCS</h3>
+          <p class="careers-desc">
+            We continuously look for energetic bank assistants, supermarket supervisors, and field loan officers committed to social impact.
+          </p>
+        </div>
+        <div>
+          <a href="contact.html?subject=Career-Application" class="btn btn-accent btn-lg">Submit CV / Inquire</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div style="display:flex; align-items:center; gap:12px; margin-bottom:16px;">
+            <img src="logo.png" alt="Demo MPCS Logo" style="width:50px; height:50px; background:#fff; border-radius:8px; padding:2px;">
+            <div>
+              <div class="footer-brand-title" data-i18n="brand.name">Demo MPCS</div>
+              <div style="font-size:0.75rem; color:var(--accent-gold);" data-i18n="brand.sub">Multi-Purpose Co-operative Society Ltd.</div>
+            </div>
+          </div>
+          <p class="footer-desc" data-i18n="footer.desc">Demo MPCS is a premier community co-operative dedicated to socio-economic upliftment.</p>
+        </div>
+        <div>
+          <h4 class="footer-heading" data-i18n="footer.quick_links">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+            <li><a href="about.html" data-i18n="nav.about">About Us</a></li>
+            <li><a href="rates.html" data-i18n="nav.rates">Rates & Calculators</a></li>
+            <li><a href="welfare.html" data-i18n="nav.welfare">Member Welfare</a></li>
+            <li><a href="branches.html" data-i18n="nav.branches">Branches</a></li>
+            <li><a href="news.html" data-i18n="nav.news">News & Tenders</a></li>
+            <li><a href="contact.html" data-i18n="nav.contact">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading" data-i18n="footer.divisions">Our Divisions</h4>
+          <ul class="footer-links">
+            <li><a href="services.html#crb" data-i18n="div.crb">Co-op Rural Bank</a></li>
+            <li><a href="services.html#retail" data-i18n="div.retail">Co-op City Chain</a></li>
+            <li><a href="services.html#energy" data-i18n="div.energy">Fuel & Energy Stations</a></li>
+            <li><a href="services.html#commercial" data-i18n="div.commercial">Commercial & Reception Hall</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading" data-i18n="footer.legal">Legal & Registration</h4>
+          <p style="font-size:0.825rem; line-height:1.6;" data-i18n="footer.reg_text">
+            Registered under Co-operative Societies Act No. 5 of 1972. Governed by the Department of Co-operative Development, Western Province.
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 <strong data-i18n="brand.name">Demo MPCS</strong>. <span data-i18n="footer.rights">All Rights Reserved.</span></div>
+        <div data-i18n="footer.credit">Official Demonstration Portal | Designed for Community Empowerment</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Member Modal -->
+  <div class="modal-overlay" id="memberModal">
+    <div class="modal-dialog">
+      <button type="button" class="modal-close-btn">&times;</button>
+      <div style="text-align: center; margin-bottom: 20px;">
+        <img src="logo.png" alt="Demo MPCS" style="width: 52px; height: 52px; margin: 0 auto 10px auto;">
+        <h3 style="font-size: 1.4rem; font-weight: 800; color: var(--text-heading);" data-i18n="nav.become_member">Join as Member</h3>
+        <p style="font-size: 0.85rem; color: var(--text-muted);">Complete this pre-registration form.</p>
+      </div>
+      <form id="memberRegForm">
+        <div class="form-group"><label class="form-label" data-i18n="contact.name">Full Name</label><input type="text" class="form-control" required placeholder="Full Name"></div>
+        <div class="form-grid-2">
+          <div class="form-group"><label class="form-label">NIC Number</label><input type="text" class="form-control" required placeholder="NIC"></div>
+          <div class="form-group"><label class="form-label" data-i18n="contact.phone">Phone Number</label><input type="tel" class="form-control" required placeholder="Phone"></div>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%; padding: 12px;">Submit Application</button>
+      </form>
+    </div>
+  </div>
+
+  <button type="button" class="back-to-top" aria-label="Back to Top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"></polyline></svg>
+  </button>
+
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+
+

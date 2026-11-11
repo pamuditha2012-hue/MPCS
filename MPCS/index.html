@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo MPCS - Multi-Purpose Co-operative Society Ltd. | Official Portal</title>
+  <meta name="description" content="Empowering the local community with Co-operative Rural Banking, Co-op City Supermarkets, 24/7 Fuel Stations, and comprehensive member welfare since 1972.">
+  <link rel="icon" type="image/png" href="logo.png">
+  
+  <!-- Instant Theme Loader (Default: Light Mode) -->
+  <script>
+    (function() {
+      const theme = localStorage.getItem('mpcs_theme') || 'light';
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Top Notification Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="top-bar-info">
+        <span class="emergency-tag">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+          <span data-i18n="topbar.hotline">Hotline / Complaints:</span> +94 31 222 3999
+        </span>
+        <div class="top-info-item top-info-phone">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          <span data-i18n="topbar.office">Head Office: +94 31 222 3456</span>
+        </div>
+        <div class="top-info-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          <span>info@demompcs.lk</span>
+        </div>
+      </div>
+
+      <div class="top-bar-actions">
+        <!-- Language Switcher -->
+        <div class="lang-switcher">
+          <button type="button" class="lang-btn active" data-lang="en">EN</button>
+          <button type="button" class="lang-btn" data-lang="si">සිංහල</button>
+          <button type="button" class="lang-btn" data-lang="ta">தமிழ்</button>
+        </div>
+
+        <!-- Topbar Theme Toggle -->
+        <button type="button" class="theme-toggle-btn topbar-theme-btn" aria-label="Toggle Theme" title="Toggle Dark/Light Mode">
+          <span class="theme-icon sun-icon">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          </span>
+          <span class="theme-icon moon-icon">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          </span>
+          <span class="theme-btn-text">Dark</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header & Navigation -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-wrapper">
+        <img src="logo.png" alt="Demo MPCS Logo" class="brand-logo-img">
+        <div class="brand-text">
+          <span class="brand-title" data-i18n="brand.name">Demo MPCS</span>
+          <span class="brand-tag" data-i18n="brand.sub">Multi-Purpose Co-operative Society Ltd.</span>
+          <span class="brand-meta" data-i18n="brand.reg">Reg No: WP/GM/248 | Est. 1972</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link active" data-i18n="nav.home">Home</a></li>
+          <li><a href="about.html" class="nav-link" data-i18n="nav.about">About Us</a></li>
+          <li><a href="services.html" class="nav-link" data-i18n="nav.services">Services</a></li>
+          <li><a href="rates.html" class="nav-link" data-i18n="nav.rates">Rates & Calculators</a></li>
+          <li><a href="welfare.html" class="nav-link" data-i18n="nav.welfare">Member Welfare</a></li>
+          <li><a href="branches.html" class="nav-link" data-i18n="nav.branches">Branches</a></li>
+          <li><a href="news.html" class="nav-link" data-i18n="nav.news">News & Tenders</a></li>
+          <li><a href="contact.html" class="nav-link" data-i18n="nav.contact">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav CTA -->
+      <div class="nav-actions">
+        <!-- Desktop Header Theme Toggle -->
+        <button type="button" class="theme-toggle-btn header-theme-btn" aria-label="Toggle Theme" title="Toggle Dark/Light Mode">
+          <span class="theme-icon sun-icon">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          </span>
+          <span class="theme-icon moon-icon">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          </span>
+          <span class="theme-mode-text">Theme</span>
+        </button>
+
+        <a href="#memberModal" class="btn btn-primary" data-modal-target="memberModal">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><line x1="20" y1="8" x2="20" y2="14"></line><line x1="23" y1="11" x2="17" y2="11"></line></svg>
+          <span data-i18n="nav.become_member">Join as Member</span>
+        </a>
+      </div>
+
+      <!-- Mobile Controls (Theme Toggle + Burger Toggle) -->
+      <div class="mobile-nav-actions">
+        <button type="button" class="theme-toggle-btn mobile-theme-btn" aria-label="Toggle Theme" title="Toggle Dark/Light Mode">
+          <span class="theme-icon sun-icon">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          </span>
+          <span class="theme-icon moon-icon">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          </span>
+        </button>
+        <button type="button" class="mobile-toggle" aria-label="Open Navigation Menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer-backdrop"></div>
+  <aside class="mobile-drawer">
+    <div class="drawer-header">
+      <div class="brand-wrapper">
+        <img src="logo.png" alt="Demo MPCS Logo" style="width: 38px; height: 38px; background: #fff; border-radius: 6px; padding: 2px;">
+        <span class="brand-title" style="font-size: 1.1rem;" data-i18n="brand.name">Demo MPCS</span>
+      </div>
+      <button type="button" class="drawer-close" aria-label="Close Menu">&times;</button>
+    </div>
+
+    <!-- Mobile Theme Switcher -->
+    <div class="drawer-theme-box">
+      <span class="drawer-section-title">THEME MODE</span>
+      <div class="theme-switch-pill">
+        <button type="button" class="theme-pill-opt" data-theme-val="dark">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          Dark
+        </button>
+        <button type="button" class="theme-pill-opt active" data-theme-val="light">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line></svg>
+          Light
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Language Switcher -->
+    <div style="margin: 14px 0 18px 0;">
+      <span class="drawer-section-title">SELECT LANGUAGE</span>
+      <div class="lang-switcher" style="width: 100%; justify-content: space-around;">
+        <button type="button" class="lang-btn active" data-lang="en">English</button>
+        <button type="button" class="lang-btn" data-lang="si">සිංහල</button>
+        <button type="button" class="lang-btn" data-lang="ta">தமிழ்</button>
+      </div>
+    </div>
+
+    <nav class="drawer-nav">
+      <a href="index.html" class="active" data-i18n="nav.home">Home</a>
+      <a href="about.html" data-i18n="nav.about">About Us</a>
+      <a href="services.html" data-i18n="nav.services">Services</a>
+      <a href="rates.html" data-i18n="nav.rates">Rates & Calculators</a>
+      <a href="welfare.html" data-i18n="nav.welfare">Member Welfare</a>
+      <a href="branches.html" data-i18n="nav.branches">Branches</a>
+      <a href="news.html" data-i18n="nav.news">News & Tenders</a>
+      <a href="contact.html" data-i18n="nav.contact">Contact Us</a>
+    </nav>
+
+    <div style="margin-top: auto; padding-top: 16px;">
+      <a href="#memberModal" class="btn btn-primary" style="width: 100%;" data-modal-target="memberModal">
+        <span data-i18n="nav.become_member">Join as Member</span>
+      </a>
+      <div style="font-size: 0.8rem; color: var(--text-muted); text-align: center; margin-top: 12px;">
+        Hotline: <strong>+94 31 222 3999</strong>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Hero Section (Warakapola MPCS Shaded Photo & Diamond Cluster Style) -->
+  <section class="hero-section">
+    <div class="hero-overlay-pattern"></div>
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+          <span data-i18n="hero.badge">50+ Years of Trusted Community Service</span>
+        </div>
+        
+        <h1 class="hero-title">
+          <span class="brand-highlight">DEMO M.P.C.S. Ltd</span>
+          <span class="hero-motto" data-i18n="hero.title">
+            Empowering Local Lives & Economy Through Co-operative Strength
+          </span>
+        </h1>
+        
+        <p class="hero-subtitle" data-i18n="hero.subtitle">
+          Established in 1972, this premier multi-purpose co-operative society operates a vast network of rural banks and Co-op City supermarkets, 24/7 automated fuel stations, and comprehensive member welfare ensuring safe, trusted community empowerment.
+        </p>
+
+        <!-- Inline Key Statistics (Warakapola MPCS Style) -->
+        <div class="hero-inline-stats">
+          <div class="hero-stat-box">
+            <h5>Established</h5>
+            <div class="stat-val">1972</div>
+          </div>
+          <div class="hero-stat-box">
+            <h5>Rural Banks</h5>
+            <div class="stat-val">14</div>
+          </div>
+          <div class="hero-stat-box">
+            <h5>City Outlets</h5>
+            <div class="stat-val">18</div>
+          </div>
+          <div class="hero-stat-box">
+            <h5>Member Families</h5>
+            <div class="stat-val">35K+</div>
+          </div>
+        </div>
+        
+        <div class="hero-actions">
+          <a href="rates.html" class="btn btn-primary btn-lg" data-i18n="hero.btn_rates">View Bank Rates</a>
+          <a href="branches.html" class="btn btn-secondary btn-lg" data-i18n="hero.btn_branch">Find Nearest Branch</a>
+          <a href="#memberModal" class="btn btn-accent btn-lg" data-modal-target="memberModal" data-i18n="hero.btn_member">Join as Member</a>
+        </div>
+      </div>
+
+      <!-- Right Side: Floating Diamond Photo Cluster (Reference Image Style) -->
+      <div class="hero-diamond-cluster">
+        <!-- Floating decorative icon nodes -->
+        <div class="cluster-node node-1" title="Rural Banking Network">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 21h18M3 10h18M5 10v11M9 10v11M15 10v11M19 10v11M12 2L2 7h20L12 2z"></path></svg>
+        </div>
+        <div class="cluster-node node-2" title="Social Welfare & Care">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+        </div>
+        <div class="cluster-node node-3" title="Consumer Retail Supermarkets">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+        </div>
+
+        <!-- Diamond 1 (Top): Modern Co-op Building -->
+        <div class="diamond-frame diamond-top" title="Modern Headquarters & Bank">
+          <img src="assets/images/building.jpg" alt="Demo MPCS Headquarters Building" class="diamond-img">
+        </div>
+
+        <!-- Diamond 2 (Middle-Right): Hands in Solidarity (Reference Image Exact Match) -->
+        <div class="diamond-frame diamond-middle" title="Community Hands United">
+          <img src="assets/images/community-hands.jpg" alt="Community Hands Unity" class="diamond-img">
+        </div>
+
+        <!-- Diamond 3 (Bottom): Lush Green Landscape (Reference Image Exact Match) -->
+        <div class="diamond-frame diamond-bottom" title="Agricultural Heartland & Sustainability">
+          <img src="assets/images/rural-nature.jpg" alt="Sri Lankan Green Landscapes" class="diamond-img">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Statistics Counter Bar -->
+  <div class="container stats-bar-wrapper">
+    <div class="stats-card">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number"><span class="stat-count" data-target="35000">35000</span><span>+</span></div>
+          <div class="stat-label" data-i18n="stat.members">Active Member Families</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number"><span class="stat-count" data-target="14">14</span></div>
+          <div class="stat-label" data-i18n="stat.branches">CRB Rural Bank Branches</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number"><span class="stat-count" data-target="18">18</span></div>
+          <div class="stat-label" data-i18n="stat.coopcity">Co-op City Supermarkets</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number"><span class="stat-count" data-target="2">2</span></div>
+          <div class="stat-label" data-i18n="stat.fuel">Fuel & Energy Stations</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number"><span class="stat-count" data-target="52">52</span><span>+</span></div>
+          <div class="stat-label" data-i18n="stat.years">Years of Continuous Service</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Key Service Divisions -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Core Divisions</span>
+        <h2 class="section-title" data-i18n="home.services_title">Our Key Service Divisions</h2>
+        <p class="section-subtitle" data-i18n="home.services_subtitle">
+          Serving over 35,000 families across Negombo & surrounding regions with integrity, care, and economic empowerment.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Division 1 -->
+        <div class="service-card">
+          <img src="assets/images/banking.jpg" alt="Co-operative Rural Bank" class="service-card-photo">
+          <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">
+            <div class="service-icon-wrap" style="width: 42px; height: 42px; margin-bottom: 0;">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M3 10h18M5 10v11M9 10v11M15 10v11M19 10v11M12 2L2 7h20L12 2z"></path></svg>
+            </div>
+            <h3 style="margin-bottom: 0;" data-i18n="div.crb">Co-operative Rural Bank (CRB)</h3>
+          </div>
+          <p data-i18n="div.crb_desc">Providing safe savings, fixed deposits, affordable self-employment loans, and confidential gold pawning with state vault protection.</p>
+          <a href="services.html#crb" class="card-link"><span data-i18n="btn.learn_more">Learn More</span> &rarr;</a>
+        </div>
+
+        <!-- Division 2 -->
+        <div class="service-card">
+          <img src="assets/images/supermarket.jpg" alt="Consumer & Retail Chain" class="service-card-photo">
+          <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">
+            <div class="service-icon-wrap" style="width: 42px; height: 42px; margin-bottom: 0; background: var(--secondary-light); color: var(--secondary-navy);">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+            </div>
+            <h3 style="margin-bottom: 0;" data-i18n="div.retail">Consumer & Retail Chain (Co-op City)</h3>
+          </div>
+          <p data-i18n="div.retail_desc">Delivering essential dry rations at government controlled prices, fresh farm produce, and official Aswesuma welfare distribution.</p>
+          <a href="services.html#retail" class="card-link"><span data-i18n="btn.learn_more">Learn More</span> &rarr;</a>
+        </div>
+
+        <!-- Division 3 -->
+        <div class="service-card">
+          <img src="assets/images/fuel.jpg" alt="Fuel & Energy Services" class="service-card-photo">
+          <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">
+            <div class="service-icon-wrap" style="width: 42px; height: 42px; margin-bottom: 0; background: #fee2e2; color: #b91c1c;">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 22h12M4 9h10M4 4h10a1 1 0 0 1 1 1v17H3V5a1 1 0 0 1 1-1zM18 10a1 1 0 0 1 1-1h1a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2h-1a1 1 0 0 1-1-1v-8zM18 5l-3 3"></path></svg>
+            </div>
+            <h3 style="margin-bottom: 0;" data-i18n="div.energy">Fuel & Energy Services</h3>
+          </div>
+          <p data-i18n="div.energy_desc">Operating 2 fully-automated Ceypetco fuel stations 24/7 and serving as authorized distributors for Litro and Laugfs domestic gas.</p>
+          <a href="services.html#energy" class="card-link"><span data-i18n="btn.learn_more">Learn More</span> &rarr;</a>
+        </div>
+
+        <!-- Division 4 -->
+        <div class="service-card">
+          <img src="assets/images/reception.jpg" alt="Commercial & Special Enterprises" class="service-card-photo">
+          <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">
+            <div class="service-icon-wrap" style="width: 42px; height: 42px; margin-bottom: 0; background: var(--accent-light); color: #92400e;">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            </div>
+            <h3 style="margin-bottom: 0;" data-i18n="div.commercial">Commercial & Special Enterprises</h3>
+          </div>
+          <p data-i18n="div.commercial_desc">Air-conditioned 400-seat reception hall for weddings and events, wholesome Co-op bakery, and community pharmacy.</p>
+          <a href="services.html#commercial" class="card-link"><span data-i18n="btn.learn_more">Learn More</span> &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Live Financial Rates & Interactive Calculator Preview -->
+  <section class="section-padding rates-section-bg">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Financial Stability</span>
+        <h2 class="section-title" data-i18n="home.rates_title">Competitive Deposit & Pawning Rates</h2>
+        <p class="section-subtitle" data-i18n="home.rates_subtitle">
+          Enjoy government-regulated security and maximum return on your hard-earned savings.
+        </p>
+      </div>
+
+      <!-- Rates Table -->
+      <div class="rates-table-card">
+        <div class="table-responsive">
+          <table class="modern-table">
+            <thead>
+              <tr>
+                <th data-i18n="rate.account">Account / Deposit Type</th>
+                <th data-i18n="rate.term">Tenure / Basis</th>
+                <th data-i18n="rate.aer">Annual Interest Rate (AER)</th>
+                <th data-i18n="rate.note">Key Features</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong data-i18n="rate.reg_saving">Regular Savings Account</strong></td>
+                <td data-i18n="rate.reg_saving_term">On Daily Balance</td>
+                <td><span class="rate-badge">4.50%</span></td>
+                <td data-i18n="rate.reg_saving_note">Minimum opening balance Rs. 500/-</td>
+              </tr>
+              <tr>
+                <td><strong data-i18n="rate.kids_saving">Kekulu Children's Savings</strong></td>
+                <td data-i18n="rate.kids_saving_term">On Monthly Balance</td>
+                <td><span class="rate-badge">6.50%</span></td>
+                <td data-i18n="rate.kids_saving_note">Includes gifts, school supplies & exam awards</td>
+              </tr>
+              <tr>
+                <td><strong data-i18n="rate.senior_saving">Senior Citizens' Savings</strong></td>
+                <td data-i18n="rate.senior_saving_term">On Monthly Balance</td>
+                <td><span class="rate-badge">7.00%</span></td>
+                <td data-i18n="rate.senior_saving_note">For valued members aged 55 years and above</td>
+              </tr>
+              <tr>
+                <td><strong data-i18n="rate.fd_3m">Fixed Deposit (3 Months)</strong></td>
+                <td data-i18n="rate.fd_3m_term">At Maturity (3M)</td>
+                <td><span class="rate-badge gold">8.50%</span></td>
+                <td data-i18n="rate.fd_3m_note">Ideal for short-term liquidity & safe growth</td>
+              </tr>
+              <tr>
+                <td><strong data-i18n="rate.fd_6m">Fixed Deposit (6 Months)</strong></td>
+                <td data-i18n="rate.fd_6m_term">At Maturity (6M)</td>
+                <td><span class="rate-badge gold">9.75%</span></td>
+                <td data-i18n="rate.fd_6m_note">Option for monthly interest pay-out</td>
+              </tr>
+              <tr>
+                <td><strong data-i18n="rate.fd_12m">Fixed Deposit (12 Months)</strong></td>
+                <td data-i18n="rate.fd_12m_term">At Maturity (1 Year)</td>
+                <td><span class="rate-badge gold">11.00%</span></td>
+                <td data-i18n="rate.fd_12m_note">Maximum return backed by Co-operative Dept.</td>
+              </tr>
+              <tr>
+                <td><strong data-i18n="rate.pawning">Instant Gold Pawning (Ran Naya)</strong></td>
+                <td data-i18n="rate.pawning_term">Up to 12 Months</td>
+                <td><span class="rate-badge" style="background:#fef08a; color:#854d0e;">1.15% / mo</span></td>
+                <td data-i18n="rate.pawning_note">Maximum advance for 22/24k gold, confidential & safe</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Quick Interactive Calculator Component -->
+      <div class="calc-wrapper">
+        <div class="calc-grid">
+          <div>
+            <h3 style="font-size: 1.6rem; font-weight: 800; margin-bottom: 8px; color: var(--white);" data-i18n="calc.title">
+              Interactive Deposit & Returns Calculator
+            </h3>
+            <p style="font-size: 0.95rem; color: rgba(255, 255, 255, 0.8); margin-bottom: 24px;" data-i18n="calc.subtitle">
+              Plan your investment and see how much your savings will grow with Demo MPCS Rural Bank.
+            </p>
+
+            <div class="calc-form-group">
+              <label class="calc-label" data-i18n="calc.amount_label">Deposit Amount (LKR):</label>
+              <div class="calc-slider-wrap">
+                <input type="range" class="calc-range" id="calcAmountRange" min="10000" max="2000000" step="5000" value="100000">
+                <input type="text" class="calc-input-box" id="calcAmountInput" value="100,000" readonly>
+              </div>
+            </div>
+
+            <div class="calc-form-group">
+              <label class="calc-label" data-i18n="calc.tenure_label">Deposit Tenure:</label>
+              <select class="calc-select" id="calcTenureSelect">
+                <option value="12m">Fixed Deposit - 12 Months (11.00% AER)</option>
+                <option value="6m">Fixed Deposit - 6 Months (9.75% AER)</option>
+                <option value="3m">Fixed Deposit - 3 Months (8.50% AER)</option>
+                <option value="24m">Fixed Deposit - 24 Months (11.50% AER)</option>
+                <option value="senior_savings">Senior Citizens Savings (7.00% AER)</option>
+                <option value="kids_savings">Kekulu Children Savings (6.50% AER)</option>
+                <option value="reg_savings">Regular Savings (4.50% AER)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="calc-result-box">
+            <div class="calc-result-label" data-i18n="calc.result_label">Estimated Maturity Value:</div>
+            <div class="calc-result-val" id="calcMaturityDisplay">Rs. 111,000</div>
+
+            <div class="calc-subresults">
+              <div class="calc-sub-item">
+                <h5 data-i18n="calc.interest_earned">Total Interest Earned:</h5>
+                <p id="calcInterestDisplay">Rs. 11,000</p>
+              </div>
+              <div class="calc-sub-item">
+                <h5 data-i18n="calc.monthly_payout">Estimated Monthly Payout:</h5>
+                <p id="calcMonthlyDisplay">Rs. 917</p>
+              </div>
+            </div>
+
+            <div style="margin-top: 24px;">
+              <a href="rates.html" class="btn btn-accent" style="width: 100%;">
+                <span data-i18n="btn.calculate">Explore Full Financial Suite</span> &rarr;
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Member Welfare Highlight -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Community Solidarity</span>
+        <h2 class="section-title" data-i18n="home.welfare_title">Comprehensive Member Welfare</h2>
+        <p class="section-subtitle" data-i18n="home.welfare_subtitle">
+          We exist for our members. Every profit we make returns to empower our people.
+        </p>
+      </div>
+
+      <div class="welfare-grid">
+        <div class="welfare-card">
+          <span class="welfare-badge-tag">Annual Profit Share</span>
+          <h4 data-i18n="welfare.dividend_title">Annual Dividends</h4>
+          <p data-i18n="welfare.dividend_desc">Direct return of the society's annual net surplus back to our shareholding members.</p>
+          <a href="welfare.html" class="card-link" style="margin-top: 14px;"><span data-i18n="btn.learn_more">Learn More</span> &rarr;</a>
+        </div>
+
+        <div class="welfare-card">
+          <span class="welfare-badge-tag">Social Security</span>
+          <h4 data-i18n="welfare.death_title">Death Donation Fund (අවමංගල්‍යාධාර)</h4>
+          <p data-i18n="welfare.death_desc">Immediate financial relief of Rs. 50,000/- upon demise of a member, and Rs. 25,000/- for registered dependents.</p>
+          <a href="welfare.html" class="card-link" style="margin-top: 14px;"><span data-i18n="btn.learn_more">Learn More</span> &rarr;</a>
+        </div>
+
+        <div class="welfare-card">
+          <span class="welfare-badge-tag">Next Generation</span>
+          <h4 data-i18n="welfare.scholarship_title">Scholarships & Educational Awards</h4>
+          <p data-i18n="welfare.scholarship_desc">Merit scholarships and cash awards for children passing Grade 5 Scholarship, GCE O/L, and GCE A/L examinations.</p>
+          <a href="welfare.html" class="card-link" style="margin-top: 14px;"><span data-i18n="btn.learn_more">Learn More</span> &rarr;</a>
+        </div>
+
+        <div class="welfare-card">
+          <span class="welfare-badge-tag">Healthcare Aid</span>
+          <h4 data-i18n="welfare.medical_title">Medical & Critical Illness Relief</h4>
+          <p data-i18n="welfare.medical_desc">Direct grant assistance for specialized cardiac surgeries, cancer therapy, and cataract lens replacements.</p>
+          <a href="welfare.html" class="card-link" style="margin-top: 14px;"><span data-i18n="btn.learn_more">Learn More</span> &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- News & Tenders Preview -->
+  <section class="section-padding" style="background: var(--gray-100);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Transparency & Opportunities</span>
+        <h2 class="section-title" data-i18n="home.news_title">Latest News & Active Tenders</h2>
+        <p class="section-subtitle" data-i18n="home.news_subtitle">
+          Stay informed with official notifications, general meetings, and procurement opportunities.
+        </p>
+      </div>
+
+      <div class="news-grid">
+        <!-- News 1 -->
+        <div class="news-card">
+          <div class="news-body">
+            <span class="news-date">Dec 18, 2026 | General Notice</span>
+            <h4 data-i18n="news.agm_title">Notice of 52nd Annual General Meeting (AGM)</h4>
+            <p data-i18n="news.agm_desc">All active shareholding members are cordially invited to attend the 52nd AGM. Distribution of annual dividend vouchers and election of committee delegates will take place.</p>
+            <a href="news.html" class="btn btn-secondary btn-sm" data-i18n="btn.learn_more">Read Details</a>
+          </div>
+        </div>
+
+        <!-- Tender 1 -->
+        <div class="news-card">
+          <div class="tender-banner">
+            <span>TENDER ACTIVE</span>
+            <span class="tender-deadline-chip">Closes Nov 30</span>
+          </div>
+          <div class="news-body">
+            <span class="news-date" data-i18n="news.t1_no">Tender No: MPCS/NEG/2026/T-08</span>
+            <h4 data-i18n="news.t1_title">Supply of Nadu, Samba & Kekulu Rice for Co-op City Network (Year 2027)</h4>
+            <p data-i18n="news.t1_desc">Sealed bids are invited from registered rice millers and wholesale suppliers for the bulk supply of certified rice varieties for retail distribution.</p>
+            <a href="news.html#tenders" class="btn btn-primary btn-sm" data-i18n="btn.learn_more">Tender Specs & Forms</a>
+          </div>
+        </div>
+
+        <!-- Tender 2 -->
+        <div class="news-card">
+          <div class="tender-banner">
+            <span>TENDER ACTIVE</span>
+            <span class="tender-deadline-chip">Closes Dec 15</span>
+          </div>
+          <div class="news-body">
+            <span class="news-date" data-i18n="news.t2_no">Tender No: MPCS/NEG/2026/T-09</span>
+            <h4 data-i18n="news.t2_title">Procurement & Installation of IP CCTV Surveillance for Main Warehouse & HQ</h4>
+            <p data-i18n="news.t2_desc">Proposals invited from certified security and electronics vendors for a complete high-definition IP camera surveillance system with off-site monitoring.</p>
+            <a href="news.html#tenders" class="btn btn-primary btn-sm" data-i18n="btn.learn_more">Tender Specs & Forms</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand Info -->
+        <div>
+          <div style="display:flex; align-items:center; gap:12px; margin-bottom:16px;">
+            <img src="logo.png" alt="Demo MPCS Logo" style="width:50px; height:50px; background:#fff; border-radius:8px; padding:2px;">
+            <div>
+              <div class="footer-brand-title" data-i18n="brand.name">Demo MPCS</div>
+              <div style="font-size:0.75rem; color:var(--accent-gold);" data-i18n="brand.sub">Multi-Purpose Co-operative Society Ltd.</div>
+            </div>
+          </div>
+          <p class="footer-desc" data-i18n="footer.desc">
+            Demo MPCS is a premier community co-operative dedicated to socio-economic upliftment, providing trusted rural banking, fair consumer retail, energy, and welfare benefits.
+          </p>
+          <div style="font-size:0.85rem; color:rgba(255,255,255,0.8);">
+            <strong>Hotline:</strong> +94 31 222 3999<br>
+            <strong>General:</strong> +94 31 222 3456<br>
+            <strong>Email:</strong> info@demompcs.lk
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="footer-heading" data-i18n="footer.quick_links">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+            <li><a href="about.html" data-i18n="nav.about">About Us</a></li>
+            <li><a href="rates.html" data-i18n="nav.rates">Rates & Calculators</a></li>
+            <li><a href="welfare.html" data-i18n="nav.welfare">Member Welfare</a></li>
+            <li><a href="branches.html" data-i18n="nav.branches">Branches</a></li>
+            <li><a href="news.html" data-i18n="nav.news">News & Tenders</a></li>
+            <li><a href="contact.html" data-i18n="nav.contact">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Divisions -->
+        <div>
+          <h4 class="footer-heading" data-i18n="footer.divisions">Our Divisions</h4>
+          <ul class="footer-links">
+            <li><a href="services.html#crb" data-i18n="div.crb">Co-op Rural Bank</a></li>
+            <li><a href="services.html#retail" data-i18n="div.retail">Co-op City Chain</a></li>
+            <li><a href="services.html#energy" data-i18n="div.energy">Fuel & Energy Stations</a></li>
+            <li><a href="services.html#commercial" data-i18n="div.commercial">Commercial & Reception Hall</a></li>
+            <li><a href="rates.html#pawning" data-i18n="rate.pawning">Instant Gold Pawning</a></li>
+          </ul>
+        </div>
+
+        <!-- Legal & Hours -->
+        <div>
+          <h4 class="footer-heading" data-i18n="footer.legal">Legal & Registration</h4>
+          <p style="font-size:0.825rem; line-height:1.6; margin-bottom:14px;" data-i18n="footer.reg_text">
+            Registered under Co-operative Societies Act No. 5 of 1972. Governed by the Department of Co-operative Development, Western Province.
+          </p>
+          <div style="background:rgba(255,255,255,0.06); padding:12px; border-radius:8px; font-size:0.8rem;">
+            <div style="font-weight:700; color:var(--white); margin-bottom:4px;" data-i18n="contact.hq_hours">Head Office Hours:</div>
+            <div>Mon - Fri: 8:30 AM - 4:30 PM</div>
+            <div>Saturday: 8:30 AM - 12:30 PM</div>
+            <div style="color:var(--accent-gold); margin-top:4px;">Fuel Stations: Open 24/7</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 <strong data-i18n="brand.name">Demo MPCS</strong>. <span data-i18n="footer.rights">All Rights Reserved.</span>
+        </div>
+        <div data-i18n="footer.credit">
+          Official Demonstration Portal | Designed for Community Empowerment
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button type="button" class="back-to-top" aria-label="Back to Top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"></polyline></svg>
+  </button>
+
+  <!-- Member Registration Modal -->
+  <div class="modal-overlay" id="memberModal">
+    <div class="modal-dialog">
+      <button type="button" class="modal-close-btn">&times;</button>
+      <div style="text-align: center; margin-bottom: 20px;">
+        <img src="logo.png" alt="Demo MPCS" style="width: 52px; height: 52px; margin: 0 auto 10px auto;">
+        <h3 style="font-size: 1.4rem; font-weight: 800; color: var(--text-heading);" data-i18n="nav.become_member">Join as Member</h3>
+        <p style="font-size: 0.85rem; color: var(--text-muted);">Complete this pre-registration form. Our member relations officer will guide your share allotment.</p>
+      </div>
+
+      <form id="memberRegForm">
+        <div class="form-group">
+          <label class="form-label" data-i18n="contact.name">Full Name</label>
+          <input type="text" class="form-control" required placeholder="e.g. Sunil Perera">
+        </div>
+        <div class="form-grid-2">
+          <div class="form-group">
+            <label class="form-label">NIC Number</label>
+            <input type="text" class="form-control" required placeholder="e.g. 198512345678">
+          </div>
+          <div class="form-group">
+            <label class="form-label" data-i18n="contact.phone">Phone Number</label>
+            <input type="tel" class="form-control" required placeholder="e.g. 077 123 4567">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Residential Address & GN Division</label>
+          <input type="text" class="form-control" required placeholder="Street address, Grama Niladhari division">
+        </div>
+        <div class="form-group">
+          <label class="form-label" data-i18n="contact.branch">Preferred Nearest Branch</label>
+          <select class="form-control">
+            <option>Head Office - Colombo Road, Negombo</option>
+            <option>Negombo Town Branch - Main Street</option>
+            <option>Katunayake Branch - Minuwangoda Road</option>
+            <option>Kochchikade Branch - Chilaw Road</option>
+            <option>Dalupotha Branch - Dalupotha Junction</option>
+            <option>Periyamulla Branch - Chilaw Road</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%; padding: 12px;">Submit Membership Application</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- JavaScript Files -->
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+
+
