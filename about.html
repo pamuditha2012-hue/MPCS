@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Demo MPCS - Multi-Purpose Co-operative Society Ltd.</title>
+  <meta name="description" content="Learn about Demo MPCS history, vision, mission, co-operative principles, board of directors, and executive leadership since 1972.">
+  <link rel="icon" type="image/png" href="logo.png">
+  
+  <!-- Instant Theme Loader (Default: Light Mode) -->
+  <script>
+    (function() {
+      const theme = localStorage.getItem('mpcs_theme') || 'light';
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Top Notification Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="top-bar-info">
+        <span class="emergency-tag">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+          <span data-i18n="topbar.hotline">Hotline / Complaints:</span> +94 31 222 3999
+        </span>
+        <div class="top-info-item top-info-phone">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          <span data-i18n="topbar.office">Head Office: +94 31 222 3456</span>
+        </div>
+      </div>
+
+      <div class="top-bar-actions">
+        <div class="lang-switcher">
+          <button type="button" class="lang-btn active" data-lang="en">EN</button>
+          <button type="button" class="lang-btn" data-lang="si">සිංහල</button>
+          <button type="button" class="lang-btn" data-lang="ta">தமிழ்</button>
+        </div>
+
+        <!-- Topbar Theme Toggle -->
+        <button type="button" class="theme-toggle-btn topbar-theme-btn" aria-label="Toggle Theme" title="Toggle Dark/Light Mode">
+          <span class="theme-icon sun-icon">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          </span>
+          <span class="theme-icon moon-icon">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          </span>
+          <span class="theme-btn-text">Dark</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header & Navigation -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-wrapper">
+        <img src="logo.png" alt="Demo MPCS Logo" class="brand-logo-img">
+        <div class="brand-text">
+          <span class="brand-title" data-i18n="brand.name">Demo MPCS</span>
+          <span class="brand-tag" data-i18n="brand.sub">Multi-Purpose Co-operative Society Ltd.</span>
+          <span class="brand-meta" data-i18n="brand.reg">Reg No: WP/GM/248 | Est. 1972</span>
+        </div>
+      </a>
+
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link" data-i18n="nav.home">Home</a></li>
+          <li><a href="about.html" class="nav-link active" data-i18n="nav.about">About Us</a></li>
+          <li><a href="services.html" class="nav-link" data-i18n="nav.services">Services</a></li>
+          <li><a href="rates.html" class="nav-link" data-i18n="nav.rates">Rates & Calculators</a></li>
+          <li><a href="welfare.html" class="nav-link" data-i18n="nav.welfare">Member Welfare</a></li>
+          <li><a href="branches.html" class="nav-link" data-i18n="nav.branches">Branches</a></li>
+          <li><a href="news.html" class="nav-link" data-i18n="nav.news">News & Tenders</a></li>
+          <li><a href="contact.html" class="nav-link" data-i18n="nav.contact">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Desktop Header Theme Toggle -->
+        <button type="button" class="theme-toggle-btn header-theme-btn" aria-label="Toggle Theme" title="Toggle Dark/Light Mode">
+          <span class="theme-icon sun-icon">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          </span>
+          <span class="theme-icon moon-icon">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          </span>
+          <span class="theme-mode-text">Theme</span>
+        </button>
+
+        <a href="#memberModal" class="btn btn-primary" data-modal-target="memberModal">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><line x1="20" y1="8" x2="20" y2="14"></line><line x1="23" y1="11" x2="17" y2="11"></line></svg>
+          <span data-i18n="nav.become_member">Join as Member</span>
+        </a>
+      </div>
+
+      <!-- Mobile Controls (Theme Toggle + Burger Toggle) -->
+      <div class="mobile-nav-actions">
+        <button type="button" class="theme-toggle-btn mobile-theme-btn" aria-label="Toggle Theme" title="Toggle Dark/Light Mode">
+          <span class="theme-icon sun-icon">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          </span>
+          <span class="theme-icon moon-icon">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          </span>
+        </button>
+        <button type="button" class="mobile-toggle" aria-label="Open Navigation Menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer-backdrop"></div>
+  <aside class="mobile-drawer">
+    <div class="drawer-header">
+      <div class="brand-wrapper">
+        <img src="logo.png" alt="Demo MPCS Logo" style="width: 38px; height: 38px; background: #fff; border-radius: 6px; padding: 2px;">
+        <span class="brand-title" style="font-size: 1.1rem;" data-i18n="brand.name">Demo MPCS</span>
+      </div>
+      <button type="button" class="drawer-close" aria-label="Close Menu">&times;</button>
+    </div>
+
+    <!-- Mobile Theme Switcher -->
+    <div class="drawer-theme-box">
+      <span class="drawer-section-title">THEME MODE</span>
+      <div class="theme-switch-pill">
+        <button type="button" class="theme-pill-opt" data-theme-val="dark">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          Dark
+        </button>
+        <button type="button" class="theme-pill-opt active" data-theme-val="light">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line></svg>
+          Light
+        </button>
+      </div>
+    </div>
+
+    <div style="margin: 14px 0 18px 0;">
+      <span class="drawer-section-title">SELECT LANGUAGE</span>
+      <div class="lang-switcher" style="width: 100%; justify-content: space-around;">
+        <button type="button" class="lang-btn active" data-lang="en">English</button>
+        <button type="button" class="lang-btn" data-lang="si">සිංහල</button>
+        <button type="button" class="lang-btn" data-lang="ta">தமிழ்</button>
+      </div>
+    </div>
+
+    <nav class="drawer-nav">
+      <a href="index.html" data-i18n="nav.home">Home</a>
+      <a href="about.html" class="active" data-i18n="nav.about">About Us</a>
+      <a href="services.html" data-i18n="nav.services">Services</a>
+      <a href="rates.html" data-i18n="nav.rates">Rates & Calculators</a>
+      <a href="welfare.html" data-i18n="nav.welfare">Member Welfare</a>
+      <a href="branches.html" data-i18n="nav.branches">Branches</a>
+      <a href="news.html" data-i18n="nav.news">News & Tenders</a>
+      <a href="contact.html" data-i18n="nav.contact">Contact Us</a>
+    </nav>
+  </aside>
+
+  <!-- Page Banner (Shaded Photo & Themed Floating Card) -->
+  <div class="page-banner banner-about">
+    <div class="container page-banner-grid">
+      <div class="page-banner-content">
+        <span class="page-banner-badge">Co-operative Heritage Since 1972</span>
+        <h1 class="page-banner-title" data-i18n="about.title">About Demo MPCS</h1>
+        <p class="page-banner-subtitle" data-i18n="about.subtitle">Rooted in Community, Driven by Co-operative Principles since 1972.</p>
+        <div class="breadcrumb-nav">
+          <a href="index.html" data-i18n="nav.home">Home</a>
+          <span>/</span>
+          <span data-i18n="nav.about">About Us</span>
+        </div>
+      </div>
+      <div class="page-banner-visual">
+        <div class="banner-photo-card">
+          <img src="assets/images/headquarters.jpg" alt="Demo MPCS Headquarters" class="banner-photo-img">
+          <div class="banner-photo-overlay">
+            <span class="banner-photo-tag">Heritage & Trust</span>
+            <span class="banner-photo-caption">50+ Years of Service</span>
+          </div>
+          <span class="banner-diamond-pill">★ Est. 1972</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- History & Background -->
+  <section class="section-padding">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 48px; align-items: center;">
+        <div>
+          <span class="section-tag">Our Legacy</span>
+          <h2 class="section-title" data-i18n="about.history_title">Our Heritage & Background</h2>
+          <p style="font-size: 1.05rem; color: var(--text-body); line-height: 1.8; margin-bottom: 20px;" data-i18n="about.history_p1">
+            Established under the Co-operative Societies Law No. 5 of 1972 during the national co-operative restructuring, the Demo Multi-Purpose Co-operative Society Ltd. was born from the unification of several village co-operatives.
+          </p>
+          <p style="font-size: 1rem; color: var(--text-body); line-height: 1.8; margin-bottom: 24px;" data-i18n="about.history_p2">
+            Over five decades of devoted service, our society has expanded into a community anchor: 14 Co-operative Rural Bank branches, 18 Co-op City supermarkets, 2 modern automated fuel filling stations, a 400-seat reception banquet hall, and an extensive social welfare network serving over 35,000 member households.
+          </p>
+          
+          <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+            <div style="background: var(--bg-card); border: 1px solid var(--border-color); padding: 16px 24px; border-radius: var(--radius-md); box-shadow: var(--shadow-sm);">
+              <div style="font-size: 1.8rem; font-weight: 800; color: var(--primary-800);">1972</div>
+              <div style="font-size: 0.8rem; color: var(--text-muted); font-weight: 600;">Year Founded</div>
+            </div>
+            <div style="background: var(--bg-card); border: 1px solid var(--border-color); padding: 16px 24px; border-radius: var(--radius-md); box-shadow: var(--shadow-sm);">
+              <div style="font-size: 1.8rem; font-weight: 800; color: var(--primary-800);">WP/GM/248</div>
+              <div style="font-size: 0.8rem; color: var(--text-muted); font-weight: 600;">Official Registration</div>
+            </div>
+            <div style="background: var(--bg-card); border: 1px solid var(--border-color); padding: 16px 24px; border-radius: var(--radius-md); box-shadow: var(--shadow-sm);">
+              <div style="font-size: 1.8rem; font-weight: 800; color: var(--accent-amber);">35,000+</div>
+              <div style="font-size: 0.8rem; color: var(--text-muted); font-weight: 600;">Shareholding Families</div>
+            </div>
+          </div>
+        </div>
+
+        <div style="background: linear-gradient(135deg, rgba(2, 44, 34, 0.92) 0%, rgba(6, 78, 59, 0.85) 100%), url('assets/images/headquarters.jpg'); background-size: cover; background-position: center; color: var(--white); border-radius: var(--radius-xl); padding: 36px; box-shadow: var(--shadow-xl); position: relative;">
+          <div style="margin-bottom: 30px;">
+            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--accent-gold);"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg>
+              <h3 style="font-size: 1.3rem; font-weight: 800; color: var(--white);" data-i18n="about.vision_title">Our Vision</h3>
+            </div>
+            <blockquote style="font-size: 0.95rem; font-style: italic; line-height: 1.6; color: rgba(255, 255, 255, 0.9);" data-i18n="about.vision_desc">
+              "To be the foremost model co-operative movement that elevates the economic, social, and cultural standards of our members and community through collaborative solidarity."
+            </blockquote>
+          </div>
+
+          <div style="border-top: 1px solid rgba(255, 255, 255, 0.2); padding-top: 24px;">
+            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--accent-gold);"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <h3 style="font-size: 1.3rem; font-weight: 800; color: var(--white);" data-i18n="about.mission_title">Our Mission</h3>
+            </div>
+            <blockquote style="font-size: 0.95rem; font-style: italic; line-height: 1.6; color: rgba(255, 255, 255, 0.9);" data-i18n="about.mission_desc">
+              "Adhering strictly to international co-operative values, to provide dependable, highly efficient financial, commercial, and welfare solutions that guarantee maximum member satisfaction and enduring financial stability."
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Values -->
+  <section class="section-padding" style="background: var(--gray-100);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Ethical Foundations</span>
+        <h2 class="section-title" data-i18n="about.values_title">Our Core Values</h2>
+        <p class="section-subtitle">Principles that guide every transaction, loan approval, and social investment we undertake.</p>
+      </div>
+
+      <div class="welfare-grid">
+        <div class="welfare-card">
+          <div class="feature-icon-box" style="margin-bottom: 16px;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+          </div>
+          <h4 data-i18n="about.val_transparency">Transparency & Public Audit</h4>
+          <p data-i18n="about.val_transparency_desc">All financial transactions and administrative decisions remain open to democratic member audit.</p>
+        </div>
+
+        <div class="welfare-card">
+          <div class="feature-icon-box amber" style="margin-bottom: 16px;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+          </div>
+          <h4 data-i18n="about.val_equality">Democratic Equality</h4>
+          <p data-i18n="about.val_equality_desc">One Member, One Vote principle ensures every voice carries equal weight regardless of share volume.</p>
+        </div>
+
+        <div class="welfare-card">
+          <div class="feature-icon-box blue" style="margin-bottom: 16px;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+          </div>
+          <h4 data-i18n="about.val_community">Community Commitment</h4>
+          <p data-i18n="about.val_community_desc">Reinvesting local wealth into education, healthcare, and livelihood support.</p>
+        </div>
+
+        <div class="welfare-card">
+          <div class="feature-icon-box purple" style="margin-bottom: 16px;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          </div>
+          <h4 data-i18n="about.val_reliability">50+ Years Reliability</h4>
+          <p data-i18n="about.val_reliability_desc">Endorsed and regulated by the Department of Co-operative Development.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7 International Co-operative Principles -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Global Standards</span>
+        <h2 class="section-title" data-i18n="about.principles_title">The 7 Universal Co-operative Principles</h2>
+        <p class="section-subtitle">Adopted by the International Co-operative Alliance (ICA) and upheld by Demo MPCS.</p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px;">
+        <div style="background: var(--bg-card); border: 1px solid var(--border-color); padding: 18px; border-radius: var(--radius-md); font-weight: 600; color: var(--text-heading);" data-i18n="about.p1">1. Voluntary & Open Membership</div>
+        <div style="background: var(--bg-card); border: 1px solid var(--border-color); padding: 18px; border-radius: var(--radius-md); font-weight: 600; color: var(--text-heading);" data-i18n="about.p2">2. Democratic Member Control</div>
+        <div style="background: var(--bg-card); border: 1px solid var(--border-color); padding: 18px; border-radius: var(--radius-md); font-weight: 600; color: var(--text-heading);" data-i18n="about.p3">3. Member Economic Participation</div>
+        <div style="background: var(--bg-card); border: 1px solid var(--border-color); padding: 18px; border-radius: var(--radius-md); font-weight: 600; color: var(--text-heading);" data-i18n="about.p4">4. Autonomy & Independence</div>
+        <div style="background: var(--bg-card); border: 1px solid var(--border-color); padding: 18px; border-radius: var(--radius-md); font-weight: 600; color: var(--text-heading);" data-i18n="about.p5">5. Education, Training & Information</div>
+        <div style="background: var(--bg-card); border: 1px solid var(--border-color); padding: 18px; border-radius: var(--radius-md); font-weight: 600; color: var(--text-heading);" data-i18n="about.p6">6. Co-operation among Co-operatives</div>
+        <div style="background: var(--bg-card); border: 1px solid var(--border-color); padding: 18px; border-radius: var(--radius-md); font-weight: 600; color: var(--text-heading); grid-column: span 1;" data-i18n="about.p7">7. Concern for Community</div>
+      </div>
+
+      <!-- Community Solidarity Photo Banner -->
+      <div style="margin-top: 36px; border-radius: var(--radius-xl); overflow: hidden; height: 260px; position: relative; box-shadow: var(--shadow-lg);">
+        <img src="assets/images/community-hands.jpg" style="width: 100%; height: 100%; object-fit: cover;" alt="Co-operative Solidarity">
+        <div style="position: absolute; inset: 0; background: linear-gradient(to right, rgba(6, 78, 59, 0.9) 0%, rgba(6, 78, 59, 0.45) 55%, transparent 100%); display: flex; align-items: center; padding: 0 44px; color: #fff;">
+          <div>
+            <span style="background: rgba(255,255,255,0.2); padding: 4px 12px; border-radius: var(--radius-full); font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; display: inline-block; margin-bottom: 8px;">Solidarity & Trust</span>
+            <h3 style="font-size: 1.85rem; font-weight: 800; margin-bottom: 8px;">United in Co-operation</h3>
+            <p style="max-width: 520px; font-size: 0.95rem; line-height: 1.6; color: rgba(255,255,255,0.92);">
+              Our democratic foundation ensures every member family shares equally in our social surplus, dividends, and welfare funds.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Governance & Board of Directors -->
+  <section class="section-padding" style="background: var(--gray-100);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Democratic Leadership</span>
+        <h2 class="section-title" data-i18n="about.gov_title">Board of Directors & Governance</h2>
+        <p class="section-subtitle" data-i18n="about.gov_subtitle">
+          Elected democratically by our general assembly to steward the society's growth and protect member assets.
+        </p>
+      </div>
+
+      <!-- Board Members Grid -->
+      <div class="leadership-grid">
+        <div class="leader-card">
+          <div class="leader-photo-wrap">
+            <img src="assets/images/director-chairman.jpg" alt="Mr. K. A. Jayantha Perera" class="leader-photo-img">
+            <span class="leader-badge-icon gold" title="President">★</span>
+          </div>
+          <h4 class="leader-name" data-i18n="about.chairperson">Mr. K. A. Jayantha Perera</h4>
+          <span class="leader-role role-chair" data-i18n="about.chairperson_role">President / Chairman</span>
+          <p class="leader-desc">Elected Board President steering cooperative governance, strategic expansion, and member trust since 2018.</p>
+        </div>
+
+        <div class="leader-card">
+          <div class="leader-photo-wrap">
+            <img src="assets/images/director-vice-chairman.jpg" alt="Mr. M. S. Karunaratne" class="leader-photo-img">
+            <span class="leader-badge-icon" title="Vice Chairman">✓</span>
+          </div>
+          <h4 class="leader-name" data-i18n="about.vice_chair">Mr. M. S. Karunaratne</h4>
+          <span class="leader-role role-vice" data-i18n="about.vice_chair_role">Vice Chairman</span>
+          <p class="leader-desc">Oversees governance committees, regional branch relations, and agricultural cooperative initiatives.</p>
+        </div>
+
+        <div class="leader-card">
+          <div class="leader-photo-wrap">
+            <img src="assets/images/director-secretary.jpg" alt="Mrs. P. D. De Silva" class="leader-photo-img">
+            <span class="leader-badge-icon blue" title="Honorary Secretary">✉</span>
+          </div>
+          <h4 class="leader-name" data-i18n="about.secretary">Mrs. P. D. De Silva</h4>
+          <span class="leader-role role-sec" data-i18n="about.secretary_role">Honorary Secretary</span>
+          <p class="leader-desc">Manages statutory society records, AGM assemblies, member correspondence, and board secretarial duties.</p>
+        </div>
+
+        <div class="leader-card">
+          <div class="leader-photo-wrap">
+            <img src="assets/images/director-treasurer.jpg" alt="Mr. T. H. Gunasekera" class="leader-photo-img">
+            <span class="leader-badge-icon" style="background:#dc2626; color:#fff;" title="Honorary Treasurer">❖</span>
+          </div>
+          <h4 class="leader-name" data-i18n="about.treasurer">Mr. T. H. Gunasekera</h4>
+          <span class="leader-role role-treas" data-i18n="about.treasurer_role">Honorary Treasurer</span>
+          <p class="leader-desc">Directs annual budget formulation, statutory audit compliance, and prudent member funds stewardship.</p>
+        </div>
+      </div>
+
+      <!-- Executive Management Grid -->
+      <div class="section-header" style="margin-bottom: 30px;">
+        <span class="section-tag" style="background: var(--secondary-light); color: var(--secondary-navy);">Operations</span>
+        <h3 class="section-title" style="font-size: 1.7rem;" data-i18n="about.mgmt_title">Executive Management Team</h3>
+      </div>
+
+      <div class="leadership-grid">
+        <div class="leader-card">
+          <div class="leader-photo-wrap">
+            <img src="assets/images/exec-gm.jpg" alt="Mr. R. M. Bandara" class="leader-photo-img">
+            <span class="leader-badge-icon" title="General Manager">⚙</span>
+          </div>
+          <h4 class="leader-name" data-i18n="about.gm">Mr. R. M. Bandara</h4>
+          <div class="leader-role role-exec" data-i18n="about.gm_role">General Manager (B.Com, MBA, FCA)</div>
+          <p class="leader-desc">Over 25 years of commercial banking and cooperative management leading society-wide day-to-day operations.</p>
+        </div>
+
+        <div class="leader-card">
+          <div class="leader-photo-wrap">
+            <img src="assets/images/exec-crb-manager.jpg" alt="Mr. W. S. Fernando" class="leader-photo-img">
+            <span class="leader-badge-icon" title="Manager - CRB">🏛</span>
+          </div>
+          <h4 class="leader-name" data-i18n="about.crb_manager">Mr. W. S. Fernando</h4>
+          <div class="leader-role role-exec" data-i18n="about.crb_manager_role">Manager – CRB Banking Division</div>
+          <p class="leader-desc">Directs 14 rural bank branches, deposit mobilization, pawn broking, and grassroots credit programs.</p>
+        </div>
+
+        <div class="leader-card">
+          <div class="leader-photo-wrap">
+            <img src="assets/images/exec-retail-manager.jpg" alt="Mr. K. L. Wickramasinghe" class="leader-photo-img">
+            <span class="leader-badge-icon" title="Manager - Retail">🛒</span>
+          </div>
+          <h4 class="leader-name" data-i18n="about.retail_manager">Mr. K. L. Wickramasinghe</h4>
+          <div class="leader-role role-exec" data-i18n="about.retail_manager_role">Manager – Consumer & Retail Division</div>
+          <p class="leader-desc">Heads 18 Co-op City supermarkets, wholesale distribution networks, and farm-to-shelf bulk procurement.</p>
+        </div>
+
+        <div class="leader-card">
+          <div class="leader-photo-wrap">
+            <img src="assets/images/exec-accountant.jpg" alt="Mrs. N. A. Siriwardena" class="leader-photo-img">
+            <span class="leader-badge-icon" title="Chief Accountant">📊</span>
+          </div>
+          <h4 class="leader-name" data-i18n="about.accountant">Mrs. N. A. Siriwardena</h4>
+          <div class="leader-role role-exec" data-i18n="about.accountant_role">Chief Accountant</div>
+          <p class="leader-desc">Oversees financial integrity, risk management, statutory provincial audits, and annual member dividend allocations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div style="display:flex; align-items:center; gap:12px; margin-bottom:16px;">
+            <img src="logo.png" alt="Demo MPCS Logo" style="width:50px; height:50px; background:#fff; border-radius:8px; padding:2px;">
+            <div>
+              <div class="footer-brand-title" data-i18n="brand.name">Demo MPCS</div>
+              <div style="font-size:0.75rem; color:var(--accent-gold);" data-i18n="brand.sub">Multi-Purpose Co-operative Society Ltd.</div>
+            </div>
+          </div>
+          <p class="footer-desc" data-i18n="footer.desc">
+            Demo MPCS is a premier community co-operative dedicated to socio-economic upliftment, providing trusted rural banking, fair consumer retail, energy, and welfare benefits.
+          </p>
+        </div>
+        <div>
+          <h4 class="footer-heading" data-i18n="footer.quick_links">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+            <li><a href="about.html" data-i18n="nav.about">About Us</a></li>
+            <li><a href="rates.html" data-i18n="nav.rates">Rates & Calculators</a></li>
+            <li><a href="welfare.html" data-i18n="nav.welfare">Member Welfare</a></li>
+            <li><a href="branches.html" data-i18n="nav.branches">Branches</a></li>
+            <li><a href="news.html" data-i18n="nav.news">News & Tenders</a></li>
+            <li><a href="contact.html" data-i18n="nav.contact">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading" data-i18n="footer.divisions">Our Divisions</h4>
+          <ul class="footer-links">
+            <li><a href="services.html#crb" data-i18n="div.crb">Co-op Rural Bank</a></li>
+            <li><a href="services.html#retail" data-i18n="div.retail">Co-op City Chain</a></li>
+            <li><a href="services.html#energy" data-i18n="div.energy">Fuel & Energy Stations</a></li>
+            <li><a href="services.html#commercial" data-i18n="div.commercial">Commercial & Reception Hall</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading" data-i18n="footer.legal">Legal & Registration</h4>
+          <p style="font-size:0.825rem; line-height:1.6; margin-bottom:14px;" data-i18n="footer.reg_text">
+            Registered under Co-operative Societies Act No. 5 of 1972. Governed by the Department of Co-operative Development, Western Province.
+          </p>
+          <div style="background:rgba(255,255,255,0.06); padding:12px; border-radius:8px; font-size:0.8rem;">
+            <div style="font-weight:700; color:var(--white); margin-bottom:4px;" data-i18n="contact.hq_hours">Head Office Hours:</div>
+            <div>Mon - Fri: 8:30 AM - 4:30 PM</div>
+            <div>Saturday: 8:30 AM - 12:30 PM</div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 <strong data-i18n="brand.name">Demo MPCS</strong>. <span data-i18n="footer.rights">All Rights Reserved.</span></div>
+        <div data-i18n="footer.credit">Official Demonstration Portal | Designed for Community Empowerment</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Member Modal -->
+  <div class="modal-overlay" id="memberModal">
+    <div class="modal-dialog">
+      <button type="button" class="modal-close-btn">&times;</button>
+      <div style="text-align: center; margin-bottom: 20px;">
+        <img src="logo.png" alt="Demo MPCS" style="width: 52px; height: 52px; margin: 0 auto 10px auto;">
+        <h3 style="font-size: 1.4rem; font-weight: 800; color: var(--text-heading);" data-i18n="nav.become_member">Join as Member</h3>
+        <p style="font-size: 0.85rem; color: var(--text-muted);">Complete this pre-registration form. Our member relations officer will guide your share allotment.</p>
+      </div>
+      <form id="memberRegForm">
+        <div class="form-group"><label class="form-label" data-i18n="contact.name">Full Name</label><input type="text" class="form-control" required placeholder="e.g. Sunil Perera"></div>
+        <div class="form-grid-2">
+          <div class="form-group"><label class="form-label">NIC Number</label><input type="text" class="form-control" required placeholder="e.g. 198512345678"></div>
+          <div class="form-group"><label class="form-label" data-i18n="contact.phone">Phone Number</label><input type="tel" class="form-control" required placeholder="e.g. 077 123 4567"></div>
+        </div>
+        <div class="form-group"><label class="form-label">Residential Address</label><input type="text" class="form-control" required placeholder="Street address"></div>
+        <button type="submit" class="btn btn-primary" style="width: 100%; padding: 12px;">Submit Membership Application</button>
+      </form>
+    </div>
+  </div>
+
+  <button type="button" class="back-to-top" aria-label="Back to Top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"></polyline></svg>
+  </button>
+
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+
+
