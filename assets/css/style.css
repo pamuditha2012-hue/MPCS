@@ -150,6 +150,9 @@ html[data-theme="dark"] {
 html {
   scroll-behavior: smooth;
   font-size: 16px;
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100vw;
 }
 
 body {
@@ -158,7 +161,20 @@ body {
   color: var(--text-body);
   line-height: 1.6;
   overflow-x: hidden;
+  position: relative;
+  width: 100%;
+  max-width: 100%;
   -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+svg {
+  max-width: 100%;
 }
 
 /* Multi-language font adjustments */
@@ -2771,6 +2787,151 @@ html[data-theme="dark"] .careers-desc {
   color: #cbd5e1;
 }
 
+/* ==========================================================================
+   RESPONSIVE SUBPAGE GRIDS & VISUAL BANNERS
+   ========================================================================== */
+/* Visual Feature Banners across subpages */
+.visual-feature-banner {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 30px;
+  min-height: 200px;
+  display: flex;
+  align-items: stretch;
+}
+.banner-about-solidarity {
+  margin-top: 36px;
+  margin-bottom: 0;
+  min-height: 240px;
+}
+.visual-banner-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+.visual-banner-overlay {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 30px 36px;
+  color: #fff;
+}
+.banner-green-overlay {
+  background: linear-gradient(to right, rgba(6, 78, 59, 0.92) 0%, rgba(6, 78, 59, 0.45) 60%, transparent 100%);
+}
+.banner-blue-overlay {
+  background: linear-gradient(to right, rgba(30, 58, 138, 0.92) 0%, rgba(30, 58, 138, 0.45) 60%, transparent 100%);
+}
+.banner-red-overlay {
+  background: linear-gradient(to right, rgba(153, 27, 27, 0.92) 0%, rgba(153, 27, 27, 0.45) 60%, transparent 100%);
+}
+.banner-amber-overlay {
+  background: linear-gradient(to right, rgba(146, 64, 14, 0.92) 0%, rgba(146, 64, 14, 0.45) 60%, transparent 100%);
+}
+.visual-banner-overlay h3 {
+  font-size: 1.6rem;
+  font-weight: 800;
+  margin: 6px 0 4px 0;
+  color: #fff;
+}
+.visual-banner-overlay p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.92);
+  margin-bottom: 0;
+}
+
+/* About Page Grids */
+.about-heritage-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 48px;
+  align-items: center;
+}
+.about-vision-card {
+  border-radius: var(--radius-xl);
+  padding: 36px;
+  box-shadow: var(--shadow-xl);
+}
+.about-principles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+/* Services Page Grids */
+.service-division-grid {
+  display: grid;
+  gap: 24px;
+}
+.service-division-grid.service-grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+.service-division-grid.service-grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* Rates & Calculators Split Grids */
+.rates-split-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 36px;
+}
+
+/* Welfare Page Grids */
+.welfare-pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  margin-bottom: 50px;
+}
+.welfare-check-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  gap: 14px;
+  text-align: left;
+  align-items: flex-end;
+}
+.welfare-steps-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+/* News & Tenders Page Grids */
+.news-split-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  margin-bottom: 50px;
+}
+
+/* Table Horizontal Swipe Hint */
+.table-scroll-hint {
+  display: none;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--primary-700);
+  background: var(--primary-50);
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
+  margin-bottom: 12px;
+  width: fit-content;
+}
+html[data-theme="dark"] .table-scroll-hint {
+  color: #34d399;
+  background: rgba(6, 78, 59, 0.4);
+}
+
 /* Responsive Breakpoints */
 @media (max-width: 1400px) and (min-width: 1181px) {
   .site-header .nav-container {
@@ -2882,6 +3043,33 @@ html[data-theme="dark"] .careers-desc {
   }
   .form-grid-2 {
     grid-template-columns: 1fr;
+  }
+  .about-heritage-grid {
+    grid-template-columns: 1fr !important;
+    gap: 32px !important;
+  }
+  .rates-split-grid {
+    grid-template-columns: 1fr !important;
+    gap: 28px !important;
+  }
+  .welfare-pillars-grid {
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+    margin-bottom: 36px !important;
+  }
+  .news-split-grid {
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+    margin-bottom: 36px !important;
+  }
+  .service-division-grid.service-grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .welfare-steps-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .branch-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -3027,8 +3215,33 @@ html[data-theme="dark"] .careers-desc {
   }
 
   /* Grids to Single Column on Mobile */
-  .services-grid, .welfare-grid, .branch-grid, .news-grid {
-    grid-template-columns: 1fr;
+  .services-grid, 
+  .welfare-grid, 
+  .branch-grid, 
+  .news-grid,
+  .about-heritage-grid,
+  .service-division-grid.service-grid-3,
+  .service-division-grid.service-grid-2,
+  .rates-split-grid,
+  .welfare-pillars-grid,
+  .welfare-steps-grid,
+  .news-split-grid {
+    grid-template-columns: 1fr !important;
+    gap: 18px !important;
+  }
+  .about-principles-grid {
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+  }
+  .about-vision-card {
+    padding: 24px 18px !important;
+  }
+  .welfare-check-form {
+    grid-template-columns: 1fr !important;
+    gap: 14px !important;
+  }
+  .welfare-check-form button {
+    width: 100% !important;
   }
   .hero-card-stack {
     grid-template-columns: 1fr;
@@ -3036,6 +3249,28 @@ html[data-theme="dark"] .careers-desc {
   .footer-grid {
     grid-template-columns: 1fr;
     gap: 32px;
+  }
+
+  /* Visual Feature Banners on Mobile */
+  .visual-feature-banner {
+    min-height: auto !important;
+    margin-bottom: 22px !important;
+    border-radius: var(--radius-lg) !important;
+  }
+  .banner-about-solidarity {
+    margin-top: 24px !important;
+    min-height: auto !important;
+  }
+  .visual-banner-overlay {
+    padding: 22px 18px !important;
+  }
+  .visual-banner-overlay h3 {
+    font-size: 1.25rem !important;
+    line-height: 1.25 !important;
+  }
+  .visual-banner-overlay p {
+    font-size: 0.85rem !important;
+    line-height: 1.45 !important;
   }
 
   /* Section Padding */
@@ -3061,15 +3296,45 @@ html[data-theme="dark"] .careers-desc {
   }
 
   /* Table Horizontal Scrolling on Mobile */
+  .table-scroll-hint.mobile-only {
+    display: inline-flex !important;
+  }
   .table-responsive {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+    display: block !important;
+    width: 100% !important;
     margin-bottom: 20px;
     border-radius: var(--radius-lg);
     border: 1px solid var(--border-color);
   }
+  .modern-table,
   .rates-table {
-    min-width: 580px;
+    min-width: 640px !important;
+    width: 100% !important;
+  }
+  .modern-table th {
+    white-space: nowrap !important;
+    padding: 12px 14px !important;
+    font-size: 0.825rem !important;
+  }
+  .modern-table td {
+    padding: 14px 14px !important;
+    font-size: 0.85rem !important;
+  }
+  .modern-table td:nth-child(1) {
+    min-width: 180px;
+  }
+  .modern-table td:nth-child(2) {
+    min-width: 120px;
+    white-space: nowrap;
+  }
+  .modern-table td:nth-child(3) {
+    min-width: 110px;
+    white-space: nowrap;
+  }
+  .modern-table td:nth-child(4) {
+    min-width: 220px;
   }
 
   /* Branch Filter Pills on Mobile */

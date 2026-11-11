@@ -85,6 +85,7 @@ const translations = {
     "btn.filter_commercial": "Commercial",
 
     // Rates Table & Highlights
+    "table.scroll_hint": "Swipe sideways to view all rates & features",
     "rate.account": "Account / Deposit Type",
     "rate.term": "Tenure / Basis",
     "rate.aer": "Annual Interest Rate (AER)",
@@ -337,6 +338,7 @@ const translations = {
     "btn.filter_commercial": "වාණිජ සේවා",
 
     // Rates Table & Highlights
+    "table.scroll_hint": "සම්පූර්ණ පොලී අනුපාත බැලීමට වමට/දකුණට අදින්න",
     "rate.account": "ගිණුම් / තැන්පතු වර්ගය",
     "rate.term": "කාල සීමාව / පදනම",
     "rate.aer": "වාර්ෂික පොලී අනුපාතය (AER)",
@@ -589,6 +591,7 @@ const translations = {
     "btn.filter_commercial": "வணிகம்",
 
     // Rates Table & Highlights
+    "table.scroll_hint": "முழு வட்டி விகிதங்களைக் காண பக்கவாட்டில் நகர்த்தவும்",
     "rate.account": "கணக்கு / வைப்பு வகை",
     "rate.term": "காலம் / அடிப்படை",
     "rate.aer": "வருடாந்த வட்டி விகிதம் (AER)",
