@@ -51,7 +51,7 @@ const translations = {
 
     // Home Sections
     "home.services_title": "Our Key Service Divisions",
-    "home.services_subtitle": "Serving over 35,000 families across Negombo & surrounding regions with integrity, care, and economic empowerment.",
+    "home.services_subtitle": "Serving over 35,000 families across our regional network with integrity, care, and economic empowerment.",
     "home.rates_title": "Competitive Deposit & Pawning Rates",
     "home.rates_subtitle": "Enjoy government-regulated security and maximum return on your hard-earned savings.",
     "home.welfare_title": "Comprehensive Member Welfare",
@@ -217,7 +217,7 @@ const translations = {
 
     // Branches Page
     "branches.hero_title": "Branch Network & Service Centers",
-    "branches.hero_subtitle": "Conveniently located across Negombo, Katunayake, Kochchikade and suburban centers to serve you better.",
+    "branches.hero_subtitle": "Conveniently located across Central, North, South, East, West and suburban regional centers to serve you better.",
     "branches.search_placeholder": "Search branch name, town, or service...",
 
     // Contact Page
@@ -270,14 +270,14 @@ const translations = {
     // Navigation
     "nav.home": "මුල් පිටුව",
     "nav.about": "අප ගැන",
-    "nav.services": "සේවා අංශ",
-    "nav.rates": "පොලී අනුපාත හා ගණක",
-    "nav.welfare": "සාමාජික සුබසාධන",
-    "nav.branches": "ශාඛා ජාලය",
-    "nav.news": "පුවත් සහ ටෙන්ඩර්",
+    "nav.services": "සේවා",
+    "nav.rates": "පොලී අනුපාත",
+    "nav.welfare": "සුබසාධන",
+    "nav.branches": "ශාඛා",
+    "nav.news": "පුවත් & ටෙන්ඩර්",
     "nav.contact": "සම්බන්ධ වන්න",
     "nav.member_portal": "සාමාජික පිවිසුම",
-    "nav.become_member": "සාමාජිකයෙකු වන්න",
+    "nav.become_member": "සාමාජිකත්වය",
 
     // Hero Section
     "hero.badge": "වසර 50කට අධික අඛණ්ඩ ප්‍රජා විශ්වාසය",
@@ -304,7 +304,7 @@ const translations = {
 
     // Home Sections
     "home.services_title": "අපගේ ප්‍රධාන සේවා අංශ",
-    "home.services_subtitle": "මීගමුව සහ ඒ අවට 35,000කට අධික සාමාජික පවුල් වෙත අවංකභාවය හා කාර්යක්ෂමතාවයෙන් යුතුව සේවය සලසමු.",
+    "home.services_subtitle": "අපගේ කලාපීය ජාලය පුරා 35,000කට අධික සාමාජික පවුල් වෙත අවංකභාවය හා කාර්යක්ෂමතාවයෙන් යුතුව සේවය සලසමු.",
     "home.rates_title": "ආකර්ෂණීය තැන්පතු සහ රන් ණය පොලී අනුපාත",
     "home.rates_subtitle": "රජයේ අනුමැතිය සහ පූර්ණ සුරක්ෂිතභාවය සහිතව ඔබේ ඉතිරිකිරීම් වලට උපරිම ප්‍රතිලාභ ලබාගන්න.",
     "home.welfare_title": "විශේෂ සාමාජික සුබසාධන ප්‍රතිලාභ",
@@ -396,7 +396,7 @@ const translations = {
     "about.title": "Demo MPCS අප ගැන",
     "about.subtitle": "1972 සිට ප්‍රජා විශ්වාසය පෙරදැරිව සමූපකාර ප්‍රතිපත්ති ඔස්සේ ගොඩනැගුණු අභිමානවත් ගමන.",
     "about.history_title": "අපගේ ඉතිහාසය සහ පසුබිම",
-    "about.history_p1": "1972 අංක 5 දරන සමූපකාර සමිති පනත යටතේ සිදුකළ විවිධ සේවා සමූපකාර ප්‍රතිසංවිධානය සමගින්, කුඩා ග්‍රාමීය සමිති කිහිපයක ඒකාබද්ධතාවයෙන් මීගමුව විවිධ සේවා සමූපකාර සමිතිය ආරම්භ විය.",
+    "about.history_p1": "1972 අංක 5 දරන සමූපකාර සමිති පනත යටතේ සිදුකළ විවිධ සේවා සමූපකාර ප්‍රතිසංවිධානය සමගින්, කුඩා ග්‍රාමීය සමිති කිහිපයක ඒකාබද්ධතාවයෙන් Demo විවිධ සේවා සමූපකාර සමිතිය ආරම්භ විය.",
     "about.history_p2": "වසර 50කට අධික ගමනක ප්‍රතිඵලයක් ලෙස අද වන විට ග්‍රාමීය බැංකු ශාඛා 14ක්, කෝප් සිටි සුපිරි වෙළඳසැල් 18ක්, ඉන්ධන පිරවුම්හල් 2ක් සහ උත්සව ශාලා සංකීර්ණයක් මගින් 35,000කට අධික සාමාජික පවුල් ප්‍රමාණයකට සිය සේවය අඛණ්ඩව ලබා දෙයි.",
     "about.vision_title": "අපගේ දැක්ම",
     "about.vision_desc": "ප්‍රජා මූලික සහයෝගිතාව තුළින් සාමාජික ජනතාවගේ සහ සමස්ත ප්‍රජාවගේ ආර්ථික, සමාජීය හා සංස්කෘතික ජීවන මට්ටම ඉහළ නංවන ප්‍රමුඛතම සමූපකාර ව්‍යාපාරය වීම.",
@@ -470,7 +470,7 @@ const translations = {
 
     // Branches Page
     "branches.hero_title": "ශාඛා ජාලය සහ සේවා මධ්‍යස්ථාන",
-    "branches.hero_subtitle": "මීගමුව, කටුනායක, කොච්චිකඩේ ඇතුළු ප්‍රදේශ රැසක ඔබට පහසුවෙන් ළඟාවිය හැකි අපගේ ශාඛා ජාලය.",
+    "branches.hero_subtitle": "මධ්‍යම, උතුරු, දකුණු, නැගෙනහිර, බස්නාහිර ඇතුළු කලාපීය මධ්‍යස්ථාන රැසක ඔබට පහසුවෙන් ළඟාවිය හැකි අපගේ ශාඛා ජාලය.",
     "branches.search_placeholder": "ශාඛාවේ නම, ප්‍රදේශය හෝ සේවාව සොයන්න...",
 
     // Contact Page
@@ -524,13 +524,13 @@ const translations = {
     "nav.home": "முகப்பு",
     "nav.about": "எங்களைப் பற்றி",
     "nav.services": "சேவைகள்",
-    "nav.rates": "வட்டி விகிதங்கள்",
-    "nav.welfare": "உறுப்பினர் நலன்புரி",
+    "nav.rates": "வட்டி விகிதம்",
+    "nav.welfare": "நலன்புரி",
     "nav.branches": "கிளைகள்",
-    "nav.news": "செய்திகள் & டெண்டர்",
-    "nav.contact": "தொடர்புகளுக்கு",
+    "nav.news": "செய்திகள்",
+    "nav.contact": "தொடர்புக்கு",
     "nav.member_portal": "உறுப்பினர் தளம்",
-    "nav.become_member": "உறுப்பினராக இணைதல்",
+    "nav.become_member": "இணையுங்கள்",
 
     // Hero Section
     "hero.badge": "50+ ஆண்டுகால சமூக நம்பிக்கை",
@@ -557,7 +557,7 @@ const translations = {
 
     // Home Sections
     "home.services_title": "எமது முக்கிய சேவைப் பிரிவுகள்",
-    "home.services_subtitle": "நீர்கொழும்பு மற்றும் சுற்றுப்புறப் பகுதிகளில் 35,000க்கும் மேற்பட்ட குடும்பங்களுக்கு நேர்மையுடன் சேவையாற்றுகிறோம்.",
+    "home.services_subtitle": "எங்கள் பிராந்திய வலையமைப்பு முழுவதும் 35,000க்கும் மேற்பட்ட குடும்பங்களுக்கு நேர்மையுடன் சேவையாற்றுகிறோம்.",
     "home.rates_title": "வைப்புத்தொகை மற்றும் அடகு வட்டி விகிதங்கள்",
     "home.rates_subtitle": "அரசாங்க ஒழுங்குமுறை மற்றும் முழுப் பாதுகாப்புடன் உங்கள் சேமிப்புக்கு அதிகபட்ச வருமானத்தைப் பெறுங்கள்.",
     "home.welfare_title": "முழுமையான உறுப்பினர் நலன்புரி",
@@ -723,7 +723,7 @@ const translations = {
 
     // Branches Page
     "branches.hero_title": "கிளை வலையமைப்பு & சேவை நிலையங்கள்",
-    "branches.hero_subtitle": "நீர்கொழும்பு, கட்டுநாயக்க, கொச்சிக்கடை மற்றும் புறநகர்ப் பகுதிகளில் உங்கள் அருகிலுள்ள கிளைகள்.",
+    "branches.hero_subtitle": "மத்திய, வடக்கு, தெற்கு, கிழக்கு, மேற்கு மற்றும் புறநகர்ப் பிராந்திய மையங்களில் உங்கள் அருகிலுள்ள கிளைகள்.",
     "branches.search_placeholder": "கிளையின் பெயர், நகரம் அல்லது சேவையைத் தேடவும்...",
 
     // Contact Page
