@@ -10,7 +10,11 @@
   <!-- Instant Theme Loader (Default: Light Mode) -->
   <script>
     (function() {
-      const theme = localStorage.getItem('mpcs_theme') || 'light';
+      try {
+        localStorage.removeItem('mpcs_theme');
+        localStorage.removeItem('theme');
+      } catch (e) {}
+      const theme = sessionStorage.getItem('mpcs_theme') || 'light';
       document.documentElement.setAttribute('data-theme', theme);
     })();
   </script>
@@ -96,7 +100,7 @@
           <span class="theme-icon moon-icon">
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
           </span>
-          <span class="theme-mode-text">Theme</span>
+          <span class="theme-mode-text">Dark Mode</span>
         </button>
 
         <a href="#memberModal" class="btn btn-primary" data-modal-target="memberModal">
@@ -691,12 +695,12 @@
         <div class="form-group">
           <label class="form-label" data-i18n="contact.branch">Preferred Nearest Branch</label>
           <select class="form-control">
-            <option>Head Office & Central Branch - Cooperative Ave, Demo Central</option>
-            <option>Metro City Center Branch - Commercial High Street, Demo City</option>
-            <option>North Zone Branch - Airport Road, Demo North</option>
-            <option>South Sector Branch - Coastal Highway, Demo South</option>
-            <option>East Valley Supermarket - Station Road, Demo East</option>
-            <option>West Lake Branch - Lakeside Boulevard, Demo West</option>
+            <option>Head Office & Main Branch - Co-operative Square, Main Street</option>
+            <option>Town Central Branch - Main Street, Town Center</option>
+            <option>Station Road Branch - Station Road Junction</option>
+            <option>Coastal Road Pawning Center - Marine Drive / Coastal Road</option>
+            <option>Clock Tower Supermarket - Clock Tower Junction, Bazaar Street</option>
+            <option>Lake Round Branch - Lake Round Road</option>
           </select>
         </div>
         <button type="submit" class="btn btn-primary" style="width: 100%; padding: 12px;">Submit Membership Application</button>

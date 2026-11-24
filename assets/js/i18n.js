@@ -221,7 +221,7 @@ const translations = {
     "branches.search_placeholder": "Search branch name, town, or service...",
 
     // Contact Page
-    "contact.hero_title": "Contact Us & Public Grievance Desk",
+    "contact.hero_title": "Feedback & Suggestions",
     "contact.hero_subtitle": "We are here to listen. Inquire about services, lodge suggestions, or reach our emergency hotline.",
     "contact.form_title": "Send Us an Inquiry or Feedback",
     "contact.name": "Full Name",
@@ -474,7 +474,7 @@ const translations = {
     "branches.search_placeholder": "ශාඛාවේ නම, ප්‍රදේශය හෝ සේවාව සොයන්න...",
 
     // Contact Page
-    "contact.hero_title": "සම්බන්ධ වන්න සහ පැමිණිලි අංශය",
+    "contact.hero_title": "අදහස් හා යෝජනා",
     "contact.hero_subtitle": "ඔබගේ ගැටළු, සේවා විමසීම් සහ අදහස් අප වෙත පහසුවෙන් යොමු කරන්න.",
     "contact.form_title": "අප වෙත පණිවිඩයක් එවන්න",
     "contact.name": "සම්පූර්ණ නම",
@@ -727,7 +727,7 @@ const translations = {
     "branches.search_placeholder": "கிளையின் பெயர், நகரம் அல்லது சேவையைத் தேடவும்...",
 
     // Contact Page
-    "contact.hero_title": "தொடர்புகொள்ள & முறைப்பாட்டுப் பிரிவு",
+    "contact.hero_title": "கருத்துக்கள் & ஆலோசனைகள்",
     "contact.hero_subtitle": "உங்கள் ஆலோசனைகள், கேள்விகள் மற்றும் முறைப்பாடுகளை இலகுவாக எமக்கு சமர்ப்பியுங்கள்.",
     "contact.form_title": "எமக்கு செய்தி அனுப்பவும்",
     "contact.name": "முழுப் பெயர்",

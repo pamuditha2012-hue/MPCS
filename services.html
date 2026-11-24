@@ -10,7 +10,11 @@
   <!-- Instant Theme Loader (Default: Light Mode) -->
   <script>
     (function() {
-      const theme = localStorage.getItem('mpcs_theme') || 'light';
+      try {
+        localStorage.removeItem('mpcs_theme');
+        localStorage.removeItem('theme');
+      } catch (e) {}
+      const theme = sessionStorage.getItem('mpcs_theme') || 'light';
       document.documentElement.setAttribute('data-theme', theme);
     })();
   </script>
@@ -87,7 +91,7 @@
           <span class="theme-icon moon-icon">
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
           </span>
-          <span class="theme-mode-text">Theme</span>
+          <span class="theme-mode-text">Dark Mode</span>
         </button>
 
         <a href="#memberModal" class="btn btn-primary" data-modal-target="memberModal">
@@ -395,7 +399,7 @@
           <div style="font-size: 0.8rem; font-weight: 700; color: var(--accent-amber); margin-bottom: 6px;">BANQUET & EVENTS</div>
           <h4 style="font-size: 1.15rem; font-weight: 700; color: var(--text-heading); margin-bottom: 10px;">Co-op Reception Hall</h4>
           <p style="font-size: 0.9rem; color: var(--text-body); line-height: 1.6; margin-bottom: 14px;">
-            A premier 400-seat fully air-conditioned auditorium banquet hall with modern acoustic lighting, dressing suites, and ample secure parking on Cooperative Avenue, Demo Central.
+            A premier 400-seat fully air-conditioned auditorium banquet hall with modern acoustic lighting, dressing suites, and ample secure parking on Co-operative Square, Main Street.
           </p>
           <span style="display: inline-block; background: var(--primary-100); color: var(--primary-800); font-size: 0.75rem; font-weight: 700; padding: 3px 10px; border-radius: var(--radius-full);">Special Discount for Members</span>
         </div>

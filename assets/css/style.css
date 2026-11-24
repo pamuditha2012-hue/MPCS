@@ -2370,6 +2370,20 @@ html[data-theme="dark"] .site-footer {
   opacity: 1;
 }
 
+/* Theme Toggle Icon Visibility */
+html[data-theme="light"] .theme-toggle-btn .sun-icon {
+  display: none !important;
+}
+html[data-theme="light"] .theme-toggle-btn .moon-icon {
+  display: inline-flex !important;
+}
+html[data-theme="dark"] .theme-toggle-btn .sun-icon {
+  display: inline-flex !important;
+}
+html[data-theme="dark"] .theme-toggle-btn .moon-icon {
+  display: none !important;
+}
+
 /* Theme Toggle Controls */
 .theme-toggle-btn {
   display: inline-flex;

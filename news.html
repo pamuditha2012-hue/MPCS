@@ -10,7 +10,11 @@
   <!-- Instant Theme Loader (Default: Light Mode) -->
   <script>
     (function() {
-      const theme = localStorage.getItem('mpcs_theme') || 'light';
+      try {
+        localStorage.removeItem('mpcs_theme');
+        localStorage.removeItem('theme');
+      } catch (e) {}
+      const theme = sessionStorage.getItem('mpcs_theme') || 'light';
       document.documentElement.setAttribute('data-theme', theme);
     })();
   </script>
@@ -87,7 +91,7 @@
           <span class="theme-icon moon-icon">
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
           </span>
-          <span class="theme-mode-text">Theme</span>
+          <span class="theme-mode-text">Dark Mode</span>
         </button>
 
         <a href="#memberModal" class="btn btn-primary" data-modal-target="memberModal">
@@ -227,7 +231,7 @@
             <div style="background: var(--gray-50); border: 1px solid var(--border-color); padding: 14px; border-radius: var(--radius-md); font-size: 0.85rem; margin-bottom: 20px;">
               <div><strong>Non-refundable Tender Fee:</strong> LKR 2,500/-</div>
               <div><strong>Bid Security (Guarantee):</strong> LKR 100,000/-</div>
-              <div><strong>Delivery Location:</strong> Main Wholesale Stores, Demo Central</div>
+              <div><strong>Delivery Location:</strong> Main Wholesale Stores, Co-operative Square, Main Street</div>
             </div>
 
             <div style="margin-top: auto; display: flex; gap: 12px;">
@@ -277,7 +281,7 @@
       <div style="background: var(--primary-50); border: 1px solid var(--primary-200); border-radius: var(--radius-lg); padding: 28px;">
         <h4 style="font-size: 1.15rem; font-weight: 700; color: var(--text-heading); margin-bottom: 8px;">General Tender Instructions</h4>
         <p style="font-size: 0.9rem; color: var(--text-body); line-height: 1.6;">
-          Completed bids marked with the tender reference number on the top left corner of the envelope should be deposited in the Tender Box situated at the General Manager's Office, Demo MPCS Head Office, No. 100, Cooperative Avenue, Demo Central, on or before the specified deadline. Late bids will be rejected unopened.
+          Completed bids marked with the tender reference number on the top left corner of the envelope should be deposited in the Tender Box situated at the General Manager's Office, Demo MPCS Head Office, No. 100, Co-operative Square, Main Street, on or before the specified deadline. Late bids will be rejected unopened.
         </p>
       </div>
     </div>
@@ -315,7 +319,7 @@
             Branch Modernization Milestone
           </div>
           <h3 style="font-size: 1.3rem; font-weight: 800; color: var(--text-heading); margin-bottom: 12px;">
-            Renovated South Sector Co-op City Outlet Re-opened
+            Renovated Coastal Road Co-op City Outlet Re-opened
           </h3>
           <p style="font-size: 0.925rem; color: var(--text-body); line-height: 1.7; margin-bottom: 16px;">
             Upgraded with modern chillers, expanded aisle space, automated POS billing, and enhanced produce sections to provide an exceptional shopping experience at fair co-op prices.

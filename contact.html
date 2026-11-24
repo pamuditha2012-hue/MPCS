@@ -10,7 +10,11 @@
   <!-- Instant Theme Loader (Default: Light Mode) -->
   <script>
     (function() {
-      const theme = localStorage.getItem('mpcs_theme') || 'light';
+      try {
+        localStorage.removeItem('mpcs_theme');
+        localStorage.removeItem('theme');
+      } catch (e) {}
+      const theme = sessionStorage.getItem('mpcs_theme') || 'light';
       document.documentElement.setAttribute('data-theme', theme);
     })();
   </script>
@@ -87,7 +91,7 @@
           <span class="theme-icon moon-icon">
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
           </span>
-          <span class="theme-mode-text">Theme</span>
+          <span class="theme-mode-text">Dark Mode</span>
         </button>
 
         <a href="#memberModal" class="btn btn-primary" data-modal-target="memberModal">
@@ -163,7 +167,7 @@
     <div class="container page-banner-grid">
       <div class="page-banner-content">
         <span class="page-banner-badge">Dedicated Community Support</span>
-        <h1 class="page-banner-title" data-i18n="contact.hero_title">Contact Us & Public Grievance Desk</h1>
+        <h1 class="page-banner-title" data-i18n="contact.hero_title">Feedback & Suggestions</h1>
         <p class="page-banner-subtitle" data-i18n="contact.hero_subtitle">We are here to listen. Inquire about services, lodge suggestions, or reach our emergency hotline.</p>
         <div class="breadcrumb-nav">
           <a href="index.html" data-i18n="nav.home">Home</a>
@@ -200,8 +204,8 @@
             <div>
               <div style="font-size: 0.8rem; font-weight: 700; color: var(--accent-gold); text-transform: uppercase;">Official Address</div>
               <div style="font-size: 0.95rem; color: rgba(255, 255, 255, 0.9); line-height: 1.5;">
-                No. 100, Cooperative Avenue, Demo Central, Sri Lanka.<br>
-                (අංක 100, සමුපකාර මාවත, ඩෙමෝ සිටි)
+                No. 100, Co-operative Square, Main Street, Sri Lanka.<br>
+                (අංක 100, සමුපකාර චතුරශ්‍රය, ප්‍රධාන වීදිය)
               </div>
             </div>
           </div>
@@ -335,7 +339,7 @@
         <details style="background: var(--bg-card); border-radius: var(--radius-md); border: 1px solid var(--border-color); padding: 18px 24px; cursor: pointer;">
           <summary style="font-weight: 700; font-size: 1.05rem; color: var(--text-heading);">How do I book the Co-op Reception Hall?</summary>
           <p style="margin-top: 10px; font-size: 0.9rem; color: var(--text-body); line-height: 1.6;">
-            You can visit the Reception Hall booking desk at No. 102, Cooperative Avenue, Demo Central or call 011-2001107. Active members receive significant concessional rates for weddings and private functions.
+            You can visit the Reception Hall booking desk at No. 102, Co-operative Square, Main Street or call 011-2001107. Active members receive significant concessional rates for weddings and private functions.
           </p>
         </details>
 

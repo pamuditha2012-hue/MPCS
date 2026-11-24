@@ -19,7 +19,12 @@ document.addEventListener('DOMContentLoaded', () => {
    0. Theme Manager (Default: Light Mode)
    ------------------------------------------------------------------------- */
 function initTheme() {
-  const savedTheme = localStorage.getItem('mpcs_theme') || 'light'; // Clean light mode default
+  try {
+    localStorage.removeItem('mpcs_theme');
+    localStorage.removeItem('theme');
+  } catch (e) {}
+
+  const savedTheme = sessionStorage.getItem('mpcs_theme') || 'light'; // Clean light mode default
   applyTheme(savedTheme);
 
   // Bind all toggle buttons (topbar, desktop header, mobile header)
@@ -42,8 +47,11 @@ function initTheme() {
 
 function applyTheme(theme) {
   document.documentElement.setAttribute('data-theme', theme);
-  localStorage.setItem('mpcs_theme', theme);
-  localStorage.setItem('theme', theme);
+  try {
+    sessionStorage.setItem('mpcs_theme', theme);
+    localStorage.removeItem('mpcs_theme');
+    localStorage.removeItem('theme');
+  } catch (e) {}
 
   // Update theme toggle buttons state and icons
   document.querySelectorAll('.theme-toggle-btn').forEach(btn => {
