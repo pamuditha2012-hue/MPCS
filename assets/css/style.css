@@ -683,14 +683,14 @@ button, input, select, textarea {
   top: 0;
   right: 0;
   bottom: 0;
-  width: 65%;
+  width: 75%;
   background-image: 
-    linear-gradient(135deg, rgba(6, 78, 59, 0.5) 0%, rgba(16, 185, 129, 0.2) 100%),
+    linear-gradient(135deg, rgba(6, 78, 59, 0.45) 0%, rgba(16, 185, 129, 0.16) 100%),
     url('../images/headquarters.jpg');
   background-size: cover;
-  background-position: center right;
-  mask-image: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,0.12) 18%, rgba(0,0,0,0.65) 55%, rgba(0,0,0,1) 100%);
-  -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,0.12) 18%, rgba(0,0,0,0.65) 55%, rgba(0,0,0,1) 100%);
+  background-position: center;
+  mask-image: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 22%, rgba(0,0,0,0.78) 55%, rgba(0,0,0,1) 100%);
+  -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 22%, rgba(0,0,0,0.78) 55%, rgba(0,0,0,1) 100%);
   z-index: 1;
   pointer-events: none;
 }
@@ -1960,12 +1960,13 @@ html[data-theme="dark"] .site-footer {
   top: 0;
   right: 0;
   bottom: 0;
-  width: 58%;
+  width: 75%;
   background-size: cover;
-  background-position: center right;
-  opacity: 0.35;
-  mask-image: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,0.12) 18%, rgba(0,0,0,0.65) 55%, rgba(0,0,0,1) 100%);
-  -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,0.12) 18%, rgba(0,0,0,0.65) 55%, rgba(0,0,0,1) 100%);
+  background-position: center;
+  opacity: 0.75;
+  filter: brightness(1.08) contrast(1.04);
+  mask-image: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,0.25) 22%, rgba(0,0,0,0.82) 55%, rgba(0,0,0,1) 100%);
+  -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,0.25) 22%, rgba(0,0,0,0.82) 55%, rgba(0,0,0,1) 100%);
   z-index: 1;
   pointer-events: none;
 }
@@ -2015,14 +2016,16 @@ html[data-theme="dark"] .site-footer {
   letter-spacing: -0.025em;
   color: var(--white);
   line-height: 1.18;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.25);
 }
 
 .page-banner-subtitle {
   font-size: 1.05rem;
-  color: rgba(255, 255, 255, 0.85);
+  color: rgba(255, 255, 255, 0.9);
   max-width: 620px;
   line-height: 1.65;
   margin: 0 0 18px 0;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.22);
 }
 
 .breadcrumb-nav {
@@ -2658,10 +2661,23 @@ html[data-theme="dark"] .hero-section {
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 html[data-theme="dark"] .hero-overlay-pattern {
-  opacity: 0.22;
+  width: 75%;
+  opacity: 0.72;
+  filter: brightness(1.08) contrast(1.06);
+  background-position: center;
   background-image: 
-    linear-gradient(135deg, rgba(2, 44, 34, 0.9) 0%, rgba(6, 78, 59, 0.45) 100%),
+    linear-gradient(135deg, rgba(7, 13, 24, 0.52) 0%, rgba(6, 78, 59, 0.22) 100%),
     url('../images/headquarters.jpg');
+}
+html[data-theme="dark"] .page-banner {
+  background: radial-gradient(circle at 18% 25%, rgba(6, 78, 59, 0.45) 0%, transparent 60%),
+              radial-gradient(circle at 85% 70%, rgba(4, 120, 87, 0.22) 0%, transparent 55%),
+              linear-gradient(180deg, #070d18 0%, #0a1322 100%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+html[data-theme="dark"] .page-banner::before {
+  opacity: 0.72;
+  filter: brightness(1.1) contrast(1.06);
 }
 html[data-theme="dark"] .hero-title {
   color: #f8fafc;
